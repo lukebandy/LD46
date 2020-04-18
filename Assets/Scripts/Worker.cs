@@ -14,15 +14,14 @@ public class Worker : MonoBehaviour {
     private Action action;
     private Tile target;
 
-    // Start is called before the first frame update
-    void Start() {
+    public void Setup() {
         action = Action.Idle;
         timeIdleRemaning = Random.Range(5.0f, 10.0f);
     }
 
     // Update is called once per frame
     void Update() {
-        if (GameController.main.gameState == GameController.GameStates.Gameplay) {
+        if (GameController.main.gameState != GameController.GameStates.Paused) {
             // Do stuff
             switch (action) {
                 case Action.Idle:
@@ -110,10 +109,16 @@ public class Worker : MonoBehaviour {
             }
         }
 
-        // Look towards player
-        transform.GetChild(0).LookAt(Player.main.transform.position);
-        transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
+        // Look towards camera
+        if (GameController.main.gameState == GameController.GameStates.Gameplay) {
+            transform.GetChild(0).LookAt(Player.main.transform.position);
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
+        }
+        else {
+            transform.GetChild(0).LookAt(GameController.main.camera.transform.position);
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
+        }
 
-        // Update material to show angle and action
+        // TODO: Update material to show angle and action
     }
 }

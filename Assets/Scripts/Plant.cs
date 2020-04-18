@@ -17,11 +17,6 @@ public class Plant : MonoBehaviour {
     private float timeDeadProgress;
     private bool died;
 
-    // Start is called before the first frame update
-    void Start() {
-        meshRenderer = GetComponentInChildren<MeshRenderer>();
-    }
-
     public void Setup(Tile tile, PlantData plantData) {
         transform.position = tile.transform.position;
         this.plantData = plantData;
@@ -40,10 +35,17 @@ public class Plant : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        // Look towards player
-        transform.GetChild(0).LookAt(Player.main.transform.position);
-        transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
+        // Look towards camera
+        if (GameController.main.gameState == GameController.GameStates.Gameplay) {
+            transform.GetChild(0).LookAt(Player.main.transform.position);
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
+        }
+        else {
+            transform.GetChild(0).LookAt(GameController.main.camera.transform.position);
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
+        }
 
+        // Gameplay loop
         if (GameController.main.gameState == GameController.GameStates.Gameplay) {
             // Current state
             if (!died) {

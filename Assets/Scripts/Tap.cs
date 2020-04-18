@@ -14,7 +14,13 @@ public class Tap : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         // Look towards player
-        transform.GetChild(0).LookAt(Player.main.transform.position);
-        transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
+        if (GameController.main.gameState == GameController.GameStates.Gameplay) {
+            transform.GetChild(0).LookAt(Player.main.transform.position);
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
+        }
+        else {
+            transform.GetChild(0).LookAt(GameController.main.camera.transform.position);
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
+        }
     }
 }

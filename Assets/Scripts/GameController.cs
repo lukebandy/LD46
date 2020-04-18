@@ -31,7 +31,7 @@ public class GameController : MonoBehaviour {
     [SerializeField]
     private float seasonLength;
     [SerializeField]
-    private new Camera camera;
+    public new Camera camera;
     private Vector3 cameraPosition;
     private Quaternion cameraRotation;
     public enum GameStates { MainMenu, Intro, Gameplay, Paused, Outro }
@@ -52,6 +52,10 @@ public class GameController : MonoBehaviour {
         cameraRotation = camera.transform.rotation;
 
         gameState = GameStates.MainMenu;
+
+        // Spawn workers
+        for (int i = 0; i < 3; i++)
+            Instantiate(prefabWorker, new Vector3(Random.Range(0, Tile.tiles.GetLength(0) - 1.0f), 0, Random.Range(0, Tile.tiles.GetLength(1) - 1.0f)), Quaternion.identity, transform.Find("Workers")).GetComponent<Worker>().Setup();
     }
 
     // Update is called once per frame
@@ -75,9 +79,21 @@ public class GameController : MonoBehaviour {
                     season = Seasons.Spring;
                     year = 1;
                     seasonProgress = 0.0f;
-                    // Spawn workers
-                    for (int i = 0; i < 2; i++)
-                        Instantiate(prefabWorker, new Vector3(Random.Range(0, Tile.tiles.GetLength(0) - 1.0f), 0, Random.Range(0, Tile.tiles.GetLength(1) - 1.0f)), Quaternion.identity, transform.Find("Workers"));
+                    Plant.deaths = 0;
+                    Player.main.Setup();
+                    // Setup workers
+                    for (int i = 1; i < transform.Find("Workers").childCount; i++)
+                        transform.Find("Workers").GetChild(i).gameObject.SetActive(false);
+                    transform.Find("Workers").GetChild(0).GetComponent<Worker>().Setup();
+                    // Reset map
+                    foreach (Transform plant in transform.Find("Plants"))
+                        plant.gameObject.SetActive(false);
+                    for (int x = 0; x < Tile.tiles.GetLength(0); x++) {
+                        for (int y = 0; y < Tile.tiles.GetLength(1); y++) {
+                            Tile.tiles[x, y].plant = null;
+                            Tile.tiles[x, y].plantInProgress = false;
+                        }
+                    }
                     // Start game
                     gameState = GameStates.Gameplay;
                     camera.gameObject.SetActive(false);
@@ -99,6 +115,7 @@ public class GameController : MonoBehaviour {
 
                     seasonProgress += Time.deltaTime;
                     if (seasonProgress >= seasonLength) {
+                        // Change season
                         switch (season) {
                             case Seasons.Spring:
                                 season = Seasons.Summer;
@@ -112,6 +129,19 @@ public class GameController : MonoBehaviour {
                             case Seasons.Winter:
                                 season = Seasons.Spring;
                                 year++;
+                                // Spawn another worker
+                                bool spawned = false;
+                                foreach (Transform worker in transform.Find("Workers")) {
+                                    if (!worker.gameObject.activeSelf) {
+                                        worker.gameObject.SetActive(true);
+                                        worker.GetComponent<Worker>().Setup();
+                                        spawned = true;
+                                        break;
+                                    }
+                                }
+                                if (!spawned) {
+                                    Instantiate(prefabWorker, new Vector3(Random.Range(0, Tile.tiles.GetLength(0) - 1.0f), 0, Random.Range(0, Tile.tiles.GetLength(1) - 1.0f)), Quaternion.identity, transform.Find("Workers")).GetComponent<Worker>().Setup();
+                                }
                                 break;
                         }
                         Plant.deaths = 0;
@@ -129,6 +159,10 @@ public class GameController : MonoBehaviour {
                 // Move camera
                 camera.transform.position = Vector3.MoveTowards(camera.transform.position, cameraPosition, Time.deltaTime * 10.0f);
                 camera.transform.rotation = Quaternion.RotateTowards(camera.transform.rotation, cameraRotation, Time.deltaTime * 10.0f);
+
+                if (camera.transform.position == cameraPosition && camera.transform.rotation == cameraRotation) {
+                    gameState = GameStates.MainMenu;
+                }
                 break;
         }
     }

@@ -85,5 +85,14 @@ public class Player : MonoBehaviour {
                 }
             }
         }
+        else {
+            var emission = particleSystem.emission;
+            emission.enabled = false;
+
+            foreach (Tap tap in FindObjectsOfType<Tap>()) {
+                var emissionTap = tap.particleSystem.emission;
+                emissionTap.enabled = false;
+            }
+        }
     }
 }

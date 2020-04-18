@@ -17,10 +17,15 @@ public class UIController : MonoBehaviour {
     [SerializeField]
     private TextMeshProUGUI hudSeason;
     [SerializeField]
+    private TextMeshProUGUI hudDeaths;
+    [SerializeField]
     private TextMeshProUGUI hudWaterRemaining;
 
     [SerializeField]
     private GameObject pause;
+
+    [SerializeField]
+    private GameObject gameover;
 
     // Start is called before the first frame update
     void Start() {
@@ -39,6 +44,7 @@ public class UIController : MonoBehaviour {
             hud.SetActive(true);
             hudBalance.text = "£" + GameController.main.farmValue.ToString();
             hudSeason.text = GameController.main.season.ToString() + " - Year " + GameController.main.year.ToString();
+            hudDeaths.text = "Deaths: " + Plant.deaths.ToString() + "/10";
             hudWaterRemaining.text = Mathf.Clamp(Mathf.RoundToInt(100 * (Player.main.hoseRemaining / Player.main.hoseCapacity)), 0, 100).ToString() + "%";
         }
         else
@@ -49,13 +55,31 @@ public class UIController : MonoBehaviour {
         }
         else
             pause.SetActive(false);
+
+        if (GameController.main.gameState == GameController.GameStates.Outro && Plant.deaths >= 10) {
+            gameover.SetActive(true);
+        }
+        else {
+            gameover.SetActive(false);
+        }
     }
 
     public void Play() {
+        GameController.main.gameState = GameController.GameStates.Intro;
+    }
 
+    public void Resume() {
+        GameController.main.gameState = GameController.GameStates.Gameplay;
+    }
+
+    public void MainMenu() {
+        GameController.main.camera.transform.position = Player.main.transform.GetChild(0).transform.position;
+        GameController.main.camera.transform.rotation = Player.main.transform.GetChild(0).transform.rotation;
+        GameController.main.camera.gameObject.SetActive(true);
+        GameController.main.gameState = GameController.GameStates.Outro;
     }
 
     public void Quit() {
-
+        Application.Quit();
     }
 }
