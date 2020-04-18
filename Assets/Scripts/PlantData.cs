@@ -16,4 +16,5 @@ public class PlantData : ScriptableObject {
     public Seasons season;
     public enum Seasons { Spring, Autumn, Summer, Winter }
     public float growTime;
+    public float dryTime;
 }
