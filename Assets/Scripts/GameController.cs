@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour {
     private GameObject prefabFences;
     [SerializeField]
     private GameObject prefabTap;
+    [SerializeField]
+    private GameObject prefabWorker;
 
     // Public variables
     [HideInInspector]
@@ -38,6 +40,8 @@ public class GameController : MonoBehaviour {
         season = Seasons.Spring;
         year = 1;
         seasonProgress = 0.0f;
+
+        Instantiate(prefabWorker, new Vector3(Random.Range(0, Tile.tiles.GetLength(0) - 1.0f), 0, Random.Range(0, Tile.tiles.GetLength(1) - 1.0f)), Quaternion.identity, transform.Find("Workers"));
     }
 
     // Update is called once per frame
