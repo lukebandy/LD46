@@ -20,6 +20,7 @@ public class Player : MonoBehaviour {
     private Vector2 lookSmooth;
     [SerializeField]
     private float hoseDistance;
+    private ParticleSystem particleSystem;
 
     // Public variables
     [HideInInspector]
@@ -29,6 +30,8 @@ public class Player : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         main = this;
+        particleSystem = GetComponentInChildren<ParticleSystem>();
+
         hoseRemaining = hoseCapacity;
 
         Cursor.lockState = CursorLockMode.Locked;
@@ -60,23 +63,27 @@ public class Player : MonoBehaviour {
             transform.Translate(straffe, 0, translation);
 
             // Hose
-            if (Input.GetMouseButton(0)) {
-                if (hoseRemaining > 0) {
-                    // Reduce remaining water
-                    hoseRemaining -= Time.deltaTime;
-                    // Wake tiles wet
-                    if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTile, hoseDistance, 1 << 8)) {
-                        if (hitTile.transform.CompareTag("Tile")) {
-                            hitTile.transform.GetComponent<Tile>().Water();
-                        }
+            if (Input.GetMouseButton(0) && hoseRemaining > 0) {
+                var emission = particleSystem.emission;
+                emission.enabled = true;
+                // Reduce remaining water
+                hoseRemaining -= Time.deltaTime;
+                // Wake tiles wet
+                if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTile, hoseDistance, 1 << 8)) {
+                    if (hitTile.transform.CompareTag("Tile")) {
+                        hitTile.transform.GetComponent<Tile>().Water();
                     }
                 }
             }
+            else {
+                var emission = particleSystem.emission;
+                emission.enabled = false;
+            }
 
             // Water topup
-            if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTap, 3.0f)) {
+            if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTap, 4.0f)) {
                 if (hitTap.transform.CompareTag("Tap")) {
-                    hoseRemaining = Mathf.Clamp(hoseRemaining + (Time.deltaTime * 2.0f), 0, hoseCapacity);
+                    hoseRemaining = Mathf.Clamp(hoseRemaining + (Time.deltaTime * 5.0f), 0, hoseCapacity);
                 }
             }
         }

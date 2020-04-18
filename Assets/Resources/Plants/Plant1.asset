@@ -20,5 +20,6 @@ MonoBehaviour:
   materialGrownAlive: {fileID: 2100000, guid: 2e7bb16522ba1194baca994127c80adc, type: 2}
   materialGrownDead: {fileID: 2100000, guid: 65d9c4c0c73637b4bb085537132ed38a, type: 2}
   season: 0
-  growTime: 20
+  growTime: 10
   dryTime: 5
+  value: 5

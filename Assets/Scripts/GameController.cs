@@ -23,9 +23,13 @@ public class GameController : MonoBehaviour {
     public Seasons season;
     [HideInInspector]
     public int year;
+    [HideInInspector]
+    public int farmValue;
 
     // Private variables
     private float seasonProgress;
+    [SerializeField]
+    private float seasonLength;
 
     // Start is called before the first frame update
     void Start() {
@@ -41,13 +45,17 @@ public class GameController : MonoBehaviour {
         year = 1;
         seasonProgress = 0.0f;
 
-        Instantiate(prefabWorker, new Vector3(Random.Range(0, Tile.tiles.GetLength(0) - 1.0f), 0, Random.Range(0, Tile.tiles.GetLength(1) - 1.0f)), Quaternion.identity, transform.Find("Workers"));
+        for (int i = 0; i < 2; i++)
+            Instantiate(prefabWorker, new Vector3(Random.Range(0, Tile.tiles.GetLength(0) - 1.0f), 0, Random.Range(0, Tile.tiles.GetLength(1) - 1.0f)), Quaternion.identity, transform.Find("Workers"));
     }
 
     // Update is called once per frame
     void Update() {
+        if (Plant.deaths > 10)
+            Debug.Log("10 deaths - game over");
+
         seasonProgress += Time.deltaTime;
-        if (seasonProgress >= 20.0f) {
+        if (seasonProgress >= seasonLength) {
             switch(season) {
                 case Seasons.Spring:
                     season = Seasons.Summer;
@@ -63,6 +71,8 @@ public class GameController : MonoBehaviour {
                     year++;
                     break;
             }
+            Plant.deaths = 0;
+            seasonProgress -= seasonLength;
         }
     }
 

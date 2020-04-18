@@ -16,4 +16,7 @@ public class PlantData : ScriptableObject {
     public GameController.Seasons season;
     public float growTime;
     public float dryTime;
+
+    // Other
+    public int value;
 }

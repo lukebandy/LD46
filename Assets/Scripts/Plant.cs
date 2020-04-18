@@ -40,28 +40,35 @@ public class Plant : MonoBehaviour {
         transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
 
         // Current state
-        if (plantData.season == GameController.main.season) {
-            if (tile.wet && timeDryProgress < plantData.dryTime)
-                timeDryProgress = 0.0f;
-            else
-                timeDryProgress += Time.deltaTime;
-            if (timeDryProgress < plantData.dryTime)
-                timeGrowProgress += Time.deltaTime;
-            else {
-                timeDeadProgress += Time.deltaTime;
-                if (!died) {
-                    deaths++;
-                    died = true;
+        if (!died) {
+            //if (plantData.season == GameController.main.season) {
+                if (tile.wet && timeDryProgress < plantData.dryTime)
+                    timeDryProgress = 0.0f;
+                else
+                    timeDryProgress += Time.deltaTime;
+
+                if (timeDryProgress < plantData.dryTime)
+                    timeGrowProgress += Time.deltaTime;
+                else {
+                    if (!died) {
+                        Debug.Log("Died - water");
+                        deaths++;
+                        died = true;
+                    }
                 }
-                if (timeDeadProgress >= 5.0f) {
-                    tile.plant = null;
-                    gameObject.SetActive(false);
-                }
-            }
-        }
+            //}
+            //else {
+            //    Debug.Log("Died - season");
+            //    deaths++;
+            //    died = true;
+            //}
+        } 
         else {
-            deaths++;
-            died = true;
+            timeDeadProgress += Time.deltaTime;
+            if (timeDeadProgress >= 5.0f) {
+                tile.plant = null;
+                gameObject.SetActive(false);
+            }
         }
 
         // Update material to reflect current state
@@ -80,6 +87,18 @@ public class Plant : MonoBehaviour {
                 meshRenderer.material = plantData.materialGrowingDead;
             else
                 meshRenderer.material = plantData.materialGrownDead;
+        }
+    }
+
+    public bool Pickable {
+        get {
+            return (!died) && timeGrowProgress >= plantData.growTime;
+        }
+    }
+
+    public int Value {
+        get {
+            return plantData.value;
         }
     }
 }
