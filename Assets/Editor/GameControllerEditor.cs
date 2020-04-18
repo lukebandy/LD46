@@ -1,18 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
-public class GameControllerEditor : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+[CustomEditor(typeof(GameController))]
+public class GameControllerEditor : Editor {
+    public override void OnInspectorGUI() {
+        base.OnInspectorGUI();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameController gameController = (GameController)target;
+
+        if (GUILayout.Button("Generate Map"))
+            gameController.GenerateMap();
     }
 }
