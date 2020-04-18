@@ -7,9 +7,17 @@ public class Plant : MonoBehaviour {
     // Static variables
     public static int deaths;
 
+    // Private variables
+    PlantData plantData;
+
     // Start is called before the first frame update
     void Start() {
         
+    }
+
+    public void Setup(int x, int y, PlantData plantData) {
+        transform.position = new Vector3(x, 0, y);
+        this.plantData = plantData;
     }
 
     // Update is called once per frame
