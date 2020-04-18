@@ -41,30 +41,33 @@ public class Plant : MonoBehaviour {
 
         // Current state
         if (!died) {
-            if (plantData.season == GameController.main.season) {
+            //if (plantData.season == GameController.main.season) {
                 if (tile.wet && timeDryProgress < plantData.dryTime)
                     timeDryProgress = 0.0f;
                 else
                     timeDryProgress += Time.deltaTime;
+
                 if (timeDryProgress < plantData.dryTime)
                     timeGrowProgress += Time.deltaTime;
                 else {
-                    timeDeadProgress += Time.deltaTime;
                     if (!died) {
                         Debug.Log("Died - water");
                         deaths++;
                         died = true;
                     }
-                    if (timeDeadProgress >= 5.0f) {
-                        tile.plant = null;
-                        gameObject.SetActive(false);
-                    }
                 }
-            }
-            else {
-                Debug.Log("Died - season");
-                deaths++;
-                died = true;
+            //}
+            //else {
+            //    Debug.Log("Died - season");
+            //    deaths++;
+            //    died = true;
+            //}
+        } 
+        else {
+            timeDeadProgress += Time.deltaTime;
+            if (timeDeadProgress >= 5.0f) {
+                tile.plant = null;
+                gameObject.SetActive(false);
             }
         }
 

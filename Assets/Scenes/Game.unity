@@ -20370,7 +20370,7 @@ MonoBehaviour:
   season: 0
   year: 0
   farmValue: 0
-  seasonLength: 20
+  seasonLength: 30
 --- !u!4 &625828230
 Transform:
   m_ObjectHideFlags: 0
@@ -55748,12 +55748,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b14e6ee1ec7743c4f9b54c643b2440fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 5
   lookSensitivity: 5
   lookSmoothing: 0.5
   hoseDistance: 7
   hoseRemaining: 0
-  hoseCapacity: 3
+  hoseCapacity: 6
 --- !u!4 &1654719849
 Transform:
   m_ObjectHideFlags: 0

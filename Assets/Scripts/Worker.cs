@@ -7,8 +7,8 @@ public class Worker : MonoBehaviour {
     // Private variables
     [SerializeField]
     private GameObject prefabPlant;
-    private float timeIdleProgress;
-    private float timePlantProgress;
+    private float timeIdleRemaning;
+    private float timePlantRemaining;
 
     private enum Action { Idle, Walking, Planting }
     private Action action;
@@ -17,6 +17,7 @@ public class Worker : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         action = Action.Idle;
+        timeIdleRemaning = Random.Range(5.0f, 10.0f);
     }
 
     // Update is called once per frame
@@ -24,8 +25,8 @@ public class Worker : MonoBehaviour {
         // Do stuff
         switch (action) {
             case Action.Idle:
-                timeIdleProgress += Time.deltaTime;
-                if (timeIdleProgress <= 3.0f) {
+                timeIdleRemaning -= Time.deltaTime;
+                if (timeIdleRemaning <= 0) {
                     if (target == null || transform.position == target.transform.position)
                         target = Tile.tiles[Random.Range(0, Tile.tiles.GetLength(0)), Random.Range(0, Tile.tiles.GetLength(1))];
                     transform.position = Vector3.MoveTowards(transform.position, target.transform.position, Time.deltaTime);
@@ -37,7 +38,7 @@ public class Worker : MonoBehaviour {
                     // Does a plant need picking
                     for (int x = 0; x < Tile.tiles.GetLength(0); x++) {
                         for (int y = 0; y < Tile.tiles.GetLength(1); y++) {
-                            if (Tile.tiles[x, y].plant != null && Tile.tiles[x, y].plant.Pickable) {
+                            if (Tile.tiles[x, y].plant != null && Tile.tiles[x, y].plant.Pickable && !Tile.tiles[x, y].plantInProgress) {
                                 target = Tile.tiles[x, y];
                                 break;
                             }
@@ -58,19 +59,19 @@ public class Worker : MonoBehaviour {
                 transform.position = Vector3.MoveTowards(transform.position, target.transform.position, Time.deltaTime);
                 if (transform.position == target.transform.position) {
                     action = Action.Planting;
-                    timePlantProgress = 0.0f;
+                    timePlantRemaining = Random.Range(3.0f, 5.0f);
                 }
                 break;
 
             case Action.Planting:
-                timePlantProgress += Time.deltaTime;
-                if (timePlantProgress >= 2.0f) {
+                timePlantRemaining -= Time.deltaTime;
+                if (timePlantRemaining <= 0) {
                     // Plant a plant
                     if (target.plant == null) {
                         // Get plants suitable for this season
                         List<PlantData> plants = new List<PlantData>();
                         foreach (PlantData plant in Plant.plantDataAll) {
-                            if (plant.season == GameController.main.season)
+                            //if (plant.season == GameController.main.season)
                                 plants.Add(plant);
                         }
 
@@ -102,7 +103,7 @@ public class Worker : MonoBehaviour {
                     // Reset action state
                     target.plantInProgress = false;
                     action = Action.Idle;
-                    timeIdleProgress = 0.0f;
+                    timeIdleRemaning = Random.Range(5.0f, 10.0f);
                 }
                 break;
         }
