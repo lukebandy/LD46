@@ -6,6 +6,7 @@ public class Plant : MonoBehaviour {
 
     // Static variables
     public static int deaths;
+    public static PlantData[] plantDataAll;
 
     // Private variables
     private PlantData plantData;
@@ -21,11 +22,11 @@ public class Plant : MonoBehaviour {
         meshRenderer = GetComponentInChildren<MeshRenderer>();
     }
 
-    public void Setup(int x, int y, PlantData plantData) {
-        transform.position = new Vector3(x, 0, y);
+    public void Setup(Tile tile, PlantData plantData) {
+        transform.position = tile.transform.position;
         this.plantData = plantData;
-        Tile.tiles[x, y].plant = this;
-        tile = Tile.tiles[x, y];
+        tile.plant = this;
+        this.tile = tile;
         timeGrowProgress = 0.0f;
         timeDryProgress = 0.0f;
         timeDeadProgress = 0.0f;
@@ -39,22 +40,28 @@ public class Plant : MonoBehaviour {
         transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
 
         // Current state
-        if (tile.wet && timeDryProgress < plantData.dryTime)
-            timeDryProgress = 0.0f;
-        else
-            timeDryProgress += Time.deltaTime;
-        if (timeDryProgress < plantData.dryTime)
-            timeGrowProgress += Time.deltaTime;
+        if (plantData.season == GameController.main.season) {
+            if (tile.wet && timeDryProgress < plantData.dryTime)
+                timeDryProgress = 0.0f;
+            else
+                timeDryProgress += Time.deltaTime;
+            if (timeDryProgress < plantData.dryTime)
+                timeGrowProgress += Time.deltaTime;
+            else {
+                timeDeadProgress += Time.deltaTime;
+                if (!died) {
+                    deaths++;
+                    died = true;
+                }
+                if (timeDeadProgress >= 5.0f) {
+                    tile.plant = null;
+                    gameObject.SetActive(false);
+                }
+            }
+        }
         else {
-            timeDeadProgress += Time.deltaTime;
-            if (!died) {
-                deaths++;
-                died = true;
-            }
-            if (timeDeadProgress >= 5.0f) {
-                tile.plant = null;
-                gameObject.SetActive(false);
-            }
+            deaths++;
+            died = true;
         }
 
         // Update material to reflect current state

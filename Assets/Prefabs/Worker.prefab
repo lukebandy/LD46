@@ -138,3 +138,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08180d459cbb4234d962fab8767c8ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabPlant: {fileID: 1735496187676943927, guid: 677d8f596690525449fc1b84118a9e38,
+    type: 3}

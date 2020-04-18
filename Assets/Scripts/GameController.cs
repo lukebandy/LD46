@@ -13,10 +13,6 @@ public class GameController : MonoBehaviour {
     private GameObject prefabTile;
     [SerializeField]
     private GameObject prefabFences;
-    [SerializeField]
-    private GameObject prefabPlant;
-    [SerializeField]
-    private PlantData dataPlantA;
 
     // Public variables
     public Seasons season;
@@ -29,7 +25,11 @@ public class GameController : MonoBehaviour {
     void Start() {
         main = this;
         GenerateMap();
-        Instantiate(prefabPlant, transform.Find("Plants")).GetComponent<Plant>().Setup(15, 13, dataPlantA);
+
+        Object[] objs = Resources.LoadAll("Plants", typeof(PlantData));
+        Plant.plantDataAll = new PlantData[objs.Length];
+        for (int i = 0; i < objs.Length; i++)
+            Plant.plantDataAll[i] = (PlantData)objs[i];
 
         season = Seasons.Spring;
         year = 1;
