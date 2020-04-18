@@ -30,6 +30,12 @@ public class GameController : MonoBehaviour {
     private float seasonProgress;
     [SerializeField]
     private float seasonLength;
+    [SerializeField]
+    private new Camera camera;
+    private Vector3 cameraPosition;
+    private Quaternion cameraRotation;
+    public enum GameStates { MainMenu, Intro, Gameplay, Paused, Outro }
+    public GameStates gameState;
 
     // Start is called before the first frame update
     void Start() {
@@ -41,38 +47,89 @@ public class GameController : MonoBehaviour {
         for (int i = 0; i < objs.Length; i++)
             Plant.plantDataAll[i] = (PlantData)objs[i];
 
-        season = Seasons.Spring;
-        year = 1;
-        seasonProgress = 0.0f;
 
-        for (int i = 0; i < 2; i++)
-            Instantiate(prefabWorker, new Vector3(Random.Range(0, Tile.tiles.GetLength(0) - 1.0f), 0, Random.Range(0, Tile.tiles.GetLength(1) - 1.0f)), Quaternion.identity, transform.Find("Workers"));
+        cameraPosition = camera.transform.position;
+        cameraRotation = camera.transform.rotation;
+
+        gameState = GameStates.MainMenu;
     }
 
     // Update is called once per frame
     void Update() {
-        if (Plant.deaths > 10)
-            Debug.Log("10 deaths - game over");
+        Cursor.lockState = CursorLockMode.None;
 
-        seasonProgress += Time.deltaTime;
-        if (seasonProgress >= seasonLength) {
-            switch(season) {
-                case Seasons.Spring:
-                    season = Seasons.Summer;
-                    break;
-                case Seasons.Summer:
-                    season = Seasons.Autumn;
-                    break;
-                case Seasons.Autumn:
-                    season = Seasons.Winter;
-                    break;
-                case Seasons.Winter:
+        switch(gameState) {
+            case GameStates.MainMenu:
+                if (Input.GetKeyDown("space")) {
+                    gameState = GameStates.Intro;
+                }
+                break;
+
+            case GameStates.Intro:
+                // Move camera
+                camera.transform.position = Vector3.MoveTowards(camera.transform.position, Player.main.transform.GetChild(0).position, Time.deltaTime * 10.0f);
+                camera.transform.rotation = Quaternion.RotateTowards(camera.transform.rotation, Player.main.transform.GetChild(0).rotation, Time.deltaTime * 10.0f);
+
+                if (camera.transform.position == Player.main.transform.GetChild(0).position && camera.transform.rotation == Player.main.transform.GetChild(0).rotation) {
+                    // Setup game
                     season = Seasons.Spring;
-                    year++;
-                    break;
-            }
-            Plant.deaths = 0;
-            seasonProgress -= seasonLength;
+                    year = 1;
+                    seasonProgress = 0.0f;
+                    // Spawn workers
+                    for (int i = 0; i < 2; i++)
+                        Instantiate(prefabWorker, new Vector3(Random.Range(0, Tile.tiles.GetLength(0) - 1.0f), 0, Random.Range(0, Tile.tiles.GetLength(1) - 1.0f)), Quaternion.identity, transform.Find("Workers"));
+                    // Start game
+                    gameState = GameStates.Gameplay;
+                    camera.gameObject.SetActive(false);
+                }
+                break;
+
+            case GameStates.Gameplay:
+                if (Input.GetKeyDown("escape"))
+                    gameState = GameStates.Paused;
+
+                else {
+                    Cursor.lockState = CursorLockMode.Locked;
+
+                    if (Plant.deaths > 10) {
+                        Debug.Log("10 deaths - game over");
+                        camera.gameObject.SetActive(true);
+                        gameState = GameStates.Outro;
+                    }
+
+                    seasonProgress += Time.deltaTime;
+                    if (seasonProgress >= seasonLength) {
+                        switch (season) {
+                            case Seasons.Spring:
+                                season = Seasons.Summer;
+                                break;
+                            case Seasons.Summer:
+                                season = Seasons.Autumn;
+                                break;
+                            case Seasons.Autumn:
+                                season = Seasons.Winter;
+                                break;
+                            case Seasons.Winter:
+                                season = Seasons.Spring;
+                                year++;
+                                break;
+                        }
+                        Plant.deaths = 0;
+                        seasonProgress -= seasonLength;
+                    }
+                }
+                break;
+
+            case GameStates.Paused:
+                if (Input.GetKeyDown("escape"))
+                    gameState = GameStates.Gameplay;
+                break;
+
+            case GameStates.Outro:
+                // Move camera
+                camera.transform.position = Vector3.MoveTowards(camera.transform.position, cameraPosition, Time.deltaTime * 10.0f);
+                camera.transform.rotation = Quaternion.RotateTowards(camera.transform.rotation, cameraRotation, Time.deltaTime * 10.0f);
+                break;
         }
     }
 

@@ -20,7 +20,7 @@ public class Player : MonoBehaviour {
     private Vector2 lookSmooth;
     [SerializeField]
     private float hoseDistance;
-    private ParticleSystem particleSystem;
+    private new ParticleSystem particleSystem;
 
     // Public variables
     [HideInInspector]
@@ -31,23 +31,15 @@ public class Player : MonoBehaviour {
     void Start() {
         main = this;
         particleSystem = GetComponentInChildren<ParticleSystem>();
+    }
 
+    public void Setup() {
         hoseRemaining = hoseCapacity;
-
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update() {
-        // 
-        if (Input.GetKeyDown("escape")) {
-            if (Cursor.lockState == CursorLockMode.Locked)
-                Cursor.lockState = CursorLockMode.None;
-            else
-                Cursor.lockState = CursorLockMode.Locked;
-        }
-
-        if (Cursor.lockState == CursorLockMode.Locked) {
+        if (GameController.main.gameState == GameController.GameStates.Gameplay) {
             // Looking
             Vector2 lookInput = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
             lookInput = Vector2.Scale(lookInput, new Vector2(lookSensitivity * lookSmoothing, lookSensitivity * lookSmoothing));
@@ -81,9 +73,15 @@ public class Player : MonoBehaviour {
             }
 
             // Water topup
+            foreach (Tap tap in FindObjectsOfType<Tap>()) {
+                var emission = tap.particleSystem.emission;
+                emission.enabled = false;
+            }
             if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTap, 4.0f)) {
                 if (hitTap.transform.CompareTag("Tap")) {
                     hoseRemaining = Mathf.Clamp(hoseRemaining + (Time.deltaTime * 5.0f), 0, hoseCapacity);
+                    var emission = hitTap.transform.GetComponent<Tap>().particleSystem.emission;
+                    emission.enabled = true;
                 }
             }
         }
