@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 9016773540608838637}
   - component: {fileID: 5946732205988246715}
   - component: {fileID: 5016119839728227287}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,6 +49,7 @@ MonoBehaviour:
   wet: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
+  wetTimer: 0
 --- !u!33 &9016773540608838637
 MeshFilter:
   m_ObjectHideFlags: 0

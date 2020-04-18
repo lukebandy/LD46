@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour {
 
-    public bool wet;
+    // Static variables
+    public static Tile[,] tiles;
 
+    // Public variables
+    public Plant plant;
+
+    // Private variables
+    private bool wet;
+    private float wetTimer;
+    private MeshRenderer meshRenderer;
     [SerializeField]
     private Material materialDry;
     [SerializeField]
     private Material materialWet;
-
-    private MeshRenderer meshRenderer;
 
     // Start is called before the first frame update
     void Start() {
@@ -20,9 +26,19 @@ public class Tile : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        if (wetTimer > 0)
+            wetTimer -= Time.deltaTime;
+        if (wetTimer <= 0)
+            wet = false;
+
         if (wet)
             meshRenderer.material = materialWet;
         else
             meshRenderer.material = materialDry;
+    }
+
+    public void Water() {
+        wet = true;
+        wetTimer = 10 + Random.Range(0.0f, 5.0f);
     }
 }
