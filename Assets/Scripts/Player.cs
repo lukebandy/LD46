@@ -63,23 +63,19 @@ public class Player : MonoBehaviour {
             transform.Translate(straffe, 0, translation);
 
             // Hose
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButton(0) && hoseRemaining > 0) {
                 particleSystem.Play();
-            else if (Input.GetMouseButtonUp(0))
-                particleSystem.Stop();
-
-            if (Input.GetMouseButton(0)) {
-                if (hoseRemaining > 0) {
-                    // Reduce remaining water
-                    hoseRemaining -= Time.deltaTime;
-                    // Wake tiles wet
-                    if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTile, hoseDistance, 1 << 8)) {
-                        if (hitTile.transform.CompareTag("Tile")) {
-                            hitTile.transform.GetComponent<Tile>().Water();
-                        }
+                // Reduce remaining water
+                hoseRemaining -= Time.deltaTime;
+                // Wake tiles wet
+                if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTile, hoseDistance, 1 << 8)) {
+                    if (hitTile.transform.CompareTag("Tile")) {
+                        hitTile.transform.GetComponent<Tile>().Water();
                     }
                 }
             }
+            else
+                particleSystem.Stop();
 
             // Water topup
             if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTap, 3.0f)) {

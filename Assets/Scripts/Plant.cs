@@ -82,4 +82,19 @@ public class Plant : MonoBehaviour {
                 meshRenderer.material = plantData.materialGrownDead;
         }
     }
+
+    public bool Pickable {
+        get {
+            Debug.Log("Pickable?");
+            Debug.Log(!died);
+            Debug.Log(timeGrowProgress >= plantData.growTime);
+            return (!died) && timeGrowProgress >= plantData.growTime;
+        }
+    }
+
+    public int Value {
+        get {
+            return plantData.value;
+        }
+    }
 }

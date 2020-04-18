@@ -25,7 +25,7 @@ public class Worker : MonoBehaviour {
         switch (action) {
             case Action.Idle:
                 timeIdleProgress += Time.deltaTime;
-                if (timeIdleProgress <= 10.0f) {
+                if (timeIdleProgress <= 3.0f) {
                     if (target == null || transform.position == target.transform.position)
                         target = Tile.tiles[Random.Range(0, Tile.tiles.GetLength(0)), Random.Range(0, Tile.tiles.GetLength(1))];
                     transform.position = Vector3.MoveTowards(transform.position, target.transform.position, Time.deltaTime);
@@ -33,6 +33,20 @@ public class Worker : MonoBehaviour {
                 else {
                     action = Action.Walking;
                     target = null;
+
+                    // Does a plant need picking
+                    for (int x = 0; x < Tile.tiles.GetLength(0); x++) {
+                        for (int y = 0; y < Tile.tiles.GetLength(1); y++) {
+                            if (Tile.tiles[x, y].plant != null)
+                                Debug.Log(Tile.tiles[x, y].plant.Pickable);
+                            if (Tile.tiles[x, y].plant != null && Tile.tiles[x, y].plant.Pickable) {
+                                target = Tile.tiles[x, y];
+                                break;
+                            }
+                        }
+                    }
+
+                    // Otherwise go and plant one
                     while (target == null) {
                         Tile tile = Tile.tiles[Random.Range(0, Tile.tiles.GetLength(0)), Random.Range(0, Tile.tiles.GetLength(1))];
                         if (tile.plant == null && !tile.plantInProgress && !tile.tap)
@@ -52,30 +66,39 @@ public class Worker : MonoBehaviour {
 
             case Action.Planting:
                 timePlantProgress += Time.deltaTime;
-                if (timePlantProgress >= 10.0f) {
-                    // Get plants suitable for this season
-                    List<PlantData> plants = new List<PlantData>();
-                    foreach (PlantData plant in Plant.plantDataAll) {
-                        if (plant.season == GameController.main.season)
-                            plants.Add(plant);
-                    }
-
-                    if (plants.Count > 0) {
-                        // Plant
-                        bool planted = false;
-                        foreach (Transform plant in GameController.main.transform.Find("Plants")) {
-                            if (!plant.gameObject.activeSelf) {
-                                plant.gameObject.SetActive(true);
-                                plant.GetComponent<Plant>().Setup(target, plants[Random.Range(0, plants.Count)]);
-                                planted = true;
-                                break;
-                            }
+                if (timePlantProgress >= 2.0f) {
+                    // Plant a plant
+                    if (target.plant == null) {
+                        // Get plants suitable for this season
+                        List<PlantData> plants = new List<PlantData>();
+                        foreach (PlantData plant in Plant.plantDataAll) {
+                            if (plant.season == GameController.main.season)
+                                plants.Add(plant);
                         }
-                        if (!planted)
-                            Instantiate(prefabPlant, GameController.main.transform.Find("Plants")).GetComponent<Plant>().Setup(target, plants[Random.Range(0, plants.Count)]);
+
+                        if (plants.Count > 0) {
+                            // Plant
+                            bool planted = false;
+                            foreach (Transform plant in GameController.main.transform.Find("Plants")) {
+                                if (!plant.gameObject.activeSelf) {
+                                    plant.gameObject.SetActive(true);
+                                    plant.GetComponent<Plant>().Setup(target, plants[Random.Range(0, plants.Count)]);
+                                    planted = true;
+                                    break;
+                                }
+                            }
+                            if (!planted)
+                                Instantiate(prefabPlant, GameController.main.transform.Find("Plants")).GetComponent<Plant>().Setup(target, plants[Random.Range(0, plants.Count)]);
+                        }
+                        else
+                            Debug.LogWarning("No plants found for current season");
                     }
-                    else
-                        Debug.LogWarning("No plants found for current season");
+                    // Pick plant
+                    else {
+                        GameController.main.farmValue += target.plant.Value;
+                        target.plant.gameObject.SetActive(false);
+                        target.plant = null;
+                    }
 
                     // Reset action state
                     target.plantInProgress = false;

@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour {
     public Seasons season;
     [HideInInspector]
     public int year;
+    public int farmValue;
 
     // Private variables
     private float seasonProgress;
