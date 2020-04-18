@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour {
     [SerializeField]
     private GameObject prefabTile;
     [SerializeField]
-    private GameObject prefabFence;
+    private GameObject prefabFences;
 
     // Public variables
 
@@ -34,7 +34,7 @@ public class GameController : MonoBehaviour {
             for (int y = 0; y < sizeY; y++) {
                 if (child + 1 > transform.Find("Tiles").childCount)
                     Instantiate(prefabTile, transform.Find("Tiles"));
-                transform.Find("Tiles").GetChild(child).transform.position = new Vector3(x, 0, y);
+                transform.Find("Tiles").GetChild(child).position = new Vector3(x, 0, y);
                 transform.Find("Tiles").GetChild(child).gameObject.SetActive(true);
                 child++;
             }
@@ -44,13 +44,29 @@ public class GameController : MonoBehaviour {
             child++;
         }
 
-        // Fence
-        
+        // Fences
+        child = 0;
         for (int x = 0; x < sizeX; x++) {
-            
+            if (child + 1 > transform.Find("Fences").childCount)
+                Instantiate(prefabTile, transform.Find("Fences"));
+            transform.Find("Fences").GetChild(child).position = new Vector3(x, 0, 0);
+            transform.Find("Fences").GetChild(child).rotation = Quaternion.identity;
+            transform.Find("Fences").GetChild(child).gameObject.SetActive(true);
+            child++;
+
+            if (child + 1 > transform.Find("Fences").childCount)
+                Instantiate(prefabTile, transform.Find("Fences"));
+            transform.Find("Fences").GetChild(child).position = new Vector3(x, 0, sizeY - 1);
+            transform.Find("Fences").GetChild(child).rotation = Quaternion.identity;
+            transform.Find("Fences").GetChild(child).gameObject.SetActive(true);
+            child++;
         }
         for (int y = 0; y < sizeY; y++) {
             
+        }
+        while (child + 1 < transform.Find("Fences").childCount) {
+            transform.Find("Fences").GetChild(child).gameObject.SetActive(false);
+            child++;
         }
     }
 }
