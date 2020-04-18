@@ -19,6 +19,9 @@ public class GameController : MonoBehaviour {
     private PlantData dataPlantA;
 
     // Public variables
+    public Seasons season;
+    public int year;
+    private float seasonProgress;
 
     // Private variables
 
@@ -27,11 +30,32 @@ public class GameController : MonoBehaviour {
         main = this;
         GenerateMap();
         Instantiate(prefabPlant, transform.Find("Plants")).GetComponent<Plant>().Setup(15, 13, dataPlantA);
+
+        season = Seasons.Spring;
+        year = 1;
+        seasonProgress = 0.0f;
     }
 
     // Update is called once per frame
     void Update() {
-        
+        seasonProgress += Time.deltaTime;
+        if (seasonProgress >= 20.0f) {
+            switch(season) {
+                case Seasons.Spring:
+                    season = Seasons.Summer;
+                    break;
+                case Seasons.Summer:
+                    season = Seasons.Autumn;
+                    break;
+                case Seasons.Autumn:
+                    season = Seasons.Winter;
+                    break;
+                case Seasons.Winter:
+                    season = Seasons.Spring;
+                    year++;
+                    break;
+            }
+        }
     }
 
     public void GenerateMap(int sizeX = 20, int sizeY = 20, int hoses = 3) {
