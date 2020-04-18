@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour {
     private GameObject prefabTile;
     [SerializeField]
     private GameObject prefabFences;
+    [SerializeField]
+    private GameObject prefabPlant;
 
     // Public variables
 
@@ -48,21 +50,33 @@ public class GameController : MonoBehaviour {
         child = 0;
         for (int x = 0; x < sizeX; x++) {
             if (child + 1 > transform.Find("Fences").childCount)
-                Instantiate(prefabTile, transform.Find("Fences"));
-            transform.Find("Fences").GetChild(child).position = new Vector3(x, 0, 0);
+                Instantiate(prefabFences, transform.Find("Fences"));
+            transform.Find("Fences").GetChild(child).position = new Vector3(x, 0, -1);
             transform.Find("Fences").GetChild(child).rotation = Quaternion.identity;
             transform.Find("Fences").GetChild(child).gameObject.SetActive(true);
             child++;
 
             if (child + 1 > transform.Find("Fences").childCount)
-                Instantiate(prefabTile, transform.Find("Fences"));
-            transform.Find("Fences").GetChild(child).position = new Vector3(x, 0, sizeY - 1);
-            transform.Find("Fences").GetChild(child).rotation = Quaternion.identity;
+                Instantiate(prefabFences, transform.Find("Fences"));
+            transform.Find("Fences").GetChild(child).position = new Vector3(x, 0, sizeY);
+            transform.Find("Fences").GetChild(child).rotation = Quaternion.Euler(0, 180, 0);
             transform.Find("Fences").GetChild(child).gameObject.SetActive(true);
             child++;
         }
         for (int y = 0; y < sizeY; y++) {
-            
+            if (child + 1 > transform.Find("Fences").childCount)
+                Instantiate(prefabFences, transform.Find("Fences"));
+            transform.Find("Fences").GetChild(child).position = new Vector3(-1, 0, y);
+            transform.Find("Fences").GetChild(child).rotation = Quaternion.Euler(0, 90, 0);
+            transform.Find("Fences").GetChild(child).gameObject.SetActive(true);
+            child++;
+
+            if (child + 1 > transform.Find("Fences").childCount)
+                Instantiate(prefabFences, transform.Find("Fences"));
+            transform.Find("Fences").GetChild(child).position = new Vector3(sizeX, 0, y);
+            transform.Find("Fences").GetChild(child).rotation = Quaternion.Euler(0, 270, 0);
+            transform.Find("Fences").GetChild(child).gameObject.SetActive(true);
+            child++;
         }
         while (child + 1 < transform.Find("Fences").childCount) {
             transform.Find("Fences").GetChild(child).gameObject.SetActive(false);
