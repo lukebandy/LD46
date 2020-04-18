@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
     // Static variables
     public static Player main;
 
+    // Private variables
     [SerializeField]
     private float moveSpeed;
     [SerializeField]
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour {
     private Vector2 lookIncrement;
     private Vector2 lookSmooth;
 
+    // Public variables
     public float hoseRemaining;
 
     // Start is called before the first frame update

@@ -13,7 +13,7 @@ public class PlantData : ScriptableObject {
     public Material materialGrownDead;
 
     // Timings
-    public Seasons season;
-    public enum Seasons { Spring, Autumn, Summer, Winter }
+    public GameController.Seasons season;
     public float growTime;
+    public float dryTime;
 }

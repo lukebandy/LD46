@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac35cab0068b034389ebf5e74779533, type: 3}
   m_Name: Plant1
   m_EditorClassIdentifier: 
-  materialSproutAlive: {fileID: 0}
-  materialSproutDead: {fileID: 0}
-  materialGrowingAlive: {fileID: 0}
-  materialGrowingDead: {fileID: 0}
-  materialGrownAlive: {fileID: 0}
-  materialGrownDead: {fileID: 0}
+  materialSproutAlive: {fileID: 2100000, guid: 35a66132c7e58a843a5070944df57d17, type: 2}
+  materialSproutDead: {fileID: 2100000, guid: 8acabde77aea5b142b66c8dae121d373, type: 2}
+  materialGrowingAlive: {fileID: 2100000, guid: c12a11892e500844ab43467b7ed17984,
+    type: 2}
+  materialGrowingDead: {fileID: 2100000, guid: 3d253198673bb974483c7711dd9cc47b, type: 2}
+  materialGrownAlive: {fileID: 2100000, guid: 2e7bb16522ba1194baca994127c80adc, type: 2}
+  materialGrownDead: {fileID: 2100000, guid: 65d9c4c0c73637b4bb085537132ed38a, type: 2}
   season: 0
-  growTime: 0
+  growTime: 20
+  dryTime: 5

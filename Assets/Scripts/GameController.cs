@@ -6,6 +6,7 @@ public class GameController : MonoBehaviour {
 
     // Static variables
     public static GameController main;
+    public enum Seasons { Spring, Autumn, Summer, Winter }
 
     // Prefabs
     [SerializeField]
@@ -14,6 +15,8 @@ public class GameController : MonoBehaviour {
     private GameObject prefabFences;
     [SerializeField]
     private GameObject prefabPlant;
+    [SerializeField]
+    private PlantData dataPlantA;
 
     // Public variables
 
@@ -21,7 +24,9 @@ public class GameController : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        
+        main = this;
+        GenerateMap();
+        Instantiate(prefabPlant, transform.Find("Plants")).GetComponent<Plant>().Setup(15, 13, dataPlantA);
     }
 
     // Update is called once per frame
@@ -32,12 +37,14 @@ public class GameController : MonoBehaviour {
     public void GenerateMap(int sizeX = 20, int sizeY = 20, int hoses = 3) {
         // Tiles
         int child = 0;
+        Tile.tiles = new Tile[sizeX, sizeY];
         for (int x = 0; x < sizeX; x++) {
             for (int y = 0; y < sizeY; y++) {
                 if (child + 1 > transform.Find("Tiles").childCount)
                     Instantiate(prefabTile, transform.Find("Tiles"));
                 transform.Find("Tiles").GetChild(child).position = new Vector3(x, 0, y);
                 transform.Find("Tiles").GetChild(child).gameObject.SetActive(true);
+                Tile.tiles[x, y] = transform.Find("Tiles").GetChild(child).GetComponent<Tile>();
                 child++;
             }
         }
