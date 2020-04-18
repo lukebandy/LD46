@@ -37,8 +37,6 @@ public class Worker : MonoBehaviour {
                     // Does a plant need picking
                     for (int x = 0; x < Tile.tiles.GetLength(0); x++) {
                         for (int y = 0; y < Tile.tiles.GetLength(1); y++) {
-                            if (Tile.tiles[x, y].plant != null)
-                                Debug.Log(Tile.tiles[x, y].plant.Pickable);
                             if (Tile.tiles[x, y].plant != null && Tile.tiles[x, y].plant.Pickable) {
                                 target = Tile.tiles[x, y];
                                 break;
@@ -95,7 +93,8 @@ public class Worker : MonoBehaviour {
                     }
                     // Pick plant
                     else {
-                        GameController.main.farmValue += target.plant.Value;
+                        if (target.plant.Pickable)
+                            GameController.main.farmValue += target.plant.Value;
                         target.plant.gameObject.SetActive(false);
                         target.plant = null;
                     }

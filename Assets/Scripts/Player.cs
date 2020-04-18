@@ -64,7 +64,8 @@ public class Player : MonoBehaviour {
 
             // Hose
             if (Input.GetMouseButton(0) && hoseRemaining > 0) {
-                particleSystem.Play();
+                var emission = particleSystem.emission;
+                emission.enabled = true;
                 // Reduce remaining water
                 hoseRemaining -= Time.deltaTime;
                 // Wake tiles wet
@@ -74,13 +75,15 @@ public class Player : MonoBehaviour {
                     }
                 }
             }
-            else
-                particleSystem.Stop();
+            else {
+                var emission = particleSystem.emission;
+                emission.enabled = false;
+            }
 
             // Water topup
-            if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTap, 3.0f)) {
+            if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTap, 4.0f)) {
                 if (hitTap.transform.CompareTag("Tap")) {
-                    hoseRemaining = Mathf.Clamp(hoseRemaining + (Time.deltaTime * 2.0f), 0, hoseCapacity);
+                    hoseRemaining = Mathf.Clamp(hoseRemaining + (Time.deltaTime * 5.0f), 0, hoseCapacity);
                 }
             }
         }
