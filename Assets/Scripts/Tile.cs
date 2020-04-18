@@ -10,6 +10,8 @@ public class Tile : MonoBehaviour {
     // Public variables
     public Plant plant;
     public bool wet;
+    public bool plantInProgress;
+    public bool tap;
 
     // Private variables
     private float wetTimer;

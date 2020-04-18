@@ -463,6 +463,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &20539392
@@ -573,6 +575,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &20580300
@@ -683,6 +687,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &26213291
@@ -887,6 +893,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &35803275
@@ -997,6 +1005,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &41315806
@@ -1153,6 +1163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &44038422
@@ -1263,6 +1275,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &45051122
@@ -1513,6 +1527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &46906757
@@ -1717,6 +1733,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &56129056
@@ -1827,6 +1845,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &58237157
@@ -1937,6 +1957,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &58870397
@@ -2047,6 +2069,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &61224187
@@ -2251,6 +2275,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &66700790
@@ -2407,6 +2433,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &71500751
@@ -2517,6 +2545,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &72254922
@@ -2627,6 +2657,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &73096467
@@ -3019,6 +3051,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &92666163
@@ -3129,6 +3163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &93484272
@@ -3333,6 +3369,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &98049448
@@ -3489,6 +3527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &102344649
@@ -3599,6 +3639,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &103682934
@@ -3803,6 +3845,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &105967306
@@ -4007,6 +4051,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &107092512
@@ -4117,6 +4163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &107964401
@@ -4227,6 +4275,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &108900743
@@ -4337,6 +4387,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &112328051
@@ -4432,6 +4484,100 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112328051}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &112798149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 112798150}
+  - component: {fileID: 112798153}
+  - component: {fileID: 112798152}
+  - component: {fileID: 112798151}
+  m_Layer: 0
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &112798150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112798149}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 583852940}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &112798151
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112798149}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &112798152
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112798149}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 773bce256b6e4ea43b391c9e80e9d576, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &112798153
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112798149}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &120622703
 GameObject:
@@ -4541,6 +4687,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &127154952
@@ -4651,6 +4799,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &127169360
@@ -4761,6 +4911,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &131479796
@@ -5059,6 +5211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &140353368
@@ -5309,6 +5463,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &161066600
@@ -5419,6 +5575,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &164315002
@@ -5529,6 +5687,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &164601533
@@ -5639,6 +5799,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &166019270
@@ -5795,8 +5957,104 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
+--- !u!1 &173660916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 173660917}
+  - component: {fileID: 173660920}
+  - component: {fileID: 173660919}
+  - component: {fileID: 173660918}
+  m_Layer: 0
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &173660917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173660916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1695119672}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &173660918
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173660916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &173660919
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173660916}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 773bce256b6e4ea43b391c9e80e9d576, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &173660920
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173660916}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &175491432
 GameObject:
   m_ObjectHideFlags: 0
@@ -5905,6 +6163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &176210016
@@ -6109,6 +6369,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &184334411
@@ -6359,6 +6621,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &202699678
@@ -6469,6 +6733,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &204356760
@@ -6579,6 +6845,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &205425045
@@ -6689,6 +6957,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &222509328
@@ -6799,6 +7069,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &222862929
@@ -6955,6 +7227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &249655184
@@ -7065,6 +7339,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &251577857
@@ -7175,6 +7451,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &257529440
@@ -7285,6 +7563,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &257758826
@@ -7395,6 +7675,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &266110625
@@ -7505,6 +7787,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &270552235
@@ -7661,6 +7945,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &273194844
@@ -7817,6 +8103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &274995409
@@ -7973,6 +8261,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &276104277
@@ -8083,6 +8373,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &276621978
@@ -8193,6 +8485,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &284491478
@@ -8303,6 +8597,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &284692948
@@ -8413,6 +8709,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &285061463
@@ -8523,6 +8821,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &285502931
@@ -8865,6 +9165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &299755679
@@ -9397,6 +9699,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &304537205
@@ -9507,6 +9811,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &305248278
@@ -9617,6 +9923,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &306549900
@@ -9821,6 +10129,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &313084133
@@ -9931,6 +10241,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &314574956
@@ -10041,6 +10353,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &318202073
@@ -10291,6 +10605,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &327028140
@@ -10401,6 +10717,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &332202292
@@ -10511,6 +10829,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &332484064
@@ -10621,6 +10941,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &335963151
@@ -10731,6 +11053,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &336554597
@@ -10841,6 +11165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &337913715
@@ -10951,6 +11277,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &338127313
@@ -11061,6 +11389,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &342094739
@@ -11171,6 +11501,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &343854088
@@ -11327,6 +11659,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &350394709
@@ -11437,6 +11771,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &352064147
@@ -11593,6 +11929,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &362577506
@@ -11937,6 +12275,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &371715942
@@ -12141,6 +12481,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &390912922
@@ -12439,6 +12781,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &398142078
@@ -12549,6 +12893,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &398575458
@@ -12659,6 +13005,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &399958441
@@ -12769,6 +13117,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &402551090
@@ -12879,6 +13229,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &402687093
@@ -12989,6 +13341,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &403357950
@@ -13099,6 +13453,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &403682477
@@ -13397,6 +13753,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &437841069
@@ -13647,6 +14005,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &444852775
@@ -13851,6 +14211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &449469947
@@ -13961,6 +14323,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &457411032
@@ -14071,6 +14435,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &461080887
@@ -14181,6 +14547,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &466426443
@@ -14291,6 +14659,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &467459907
@@ -14401,6 +14771,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &469408217
@@ -14511,6 +14883,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &472355106
@@ -14621,6 +14995,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &474157960
@@ -14825,6 +15201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &477275264
@@ -14935,6 +15313,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &477818974
@@ -15045,6 +15425,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &478554077
@@ -15155,6 +15537,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &480339174
@@ -15265,6 +15649,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &485604248
@@ -15749,6 +16135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &495210810
@@ -15953,6 +16341,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &516138771
@@ -16063,6 +16453,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &516719102
@@ -16173,6 +16565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &524113310
@@ -16283,6 +16677,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &528288449
@@ -16393,6 +16789,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &534898066
@@ -16503,6 +16901,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &536345284
@@ -16613,6 +17013,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &538158925
@@ -16723,6 +17125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &538272492
@@ -16833,6 +17237,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &541597424
@@ -16943,6 +17349,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &542155277
@@ -17053,6 +17461,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &548781366
@@ -17163,6 +17573,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &548932745
@@ -17319,6 +17731,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &558464809
@@ -17429,6 +17843,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &558879888
@@ -17633,6 +18049,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &564771626
@@ -17743,6 +18161,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &565617929
@@ -17853,6 +18273,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &568019868
@@ -17963,6 +18385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &571934076
@@ -18167,6 +18591,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &573086961
@@ -18353,6 +18779,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &582162869
@@ -18557,6 +18985,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &583850226
@@ -18605,6 +19035,64 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!1 &583852939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 583852940}
+  - component: {fileID: 583852942}
+  - component: {fileID: 583852941}
+  m_Layer: 0
+  m_Name: Tap(Clone)
+  m_TagString: Tap
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &583852940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583852939}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14, y: 0, z: 14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 112798150}
+  m_Father: {fileID: 1266181253}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &583852941
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583852939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1.5, z: 0.75}
+  m_Center: {x: 0, y: 1.25, z: 0}
+--- !u!114 &583852942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583852939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dadc6c3ba1c9bc4a9442daab5d478f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &589890970
 GameObject:
   m_ObjectHideFlags: 0
@@ -18713,6 +19201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &594074073
@@ -19057,6 +19547,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &605332960
@@ -19261,6 +19753,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &608617934
@@ -19465,6 +19959,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &611377211
@@ -19715,6 +20211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &624764538
@@ -19825,6 +20323,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &625174112
@@ -19954,9 +20454,10 @@ MonoBehaviour:
     type: 3}
   prefabFences: {fileID: 7415134890514364999, guid: c40c5c42cd503f64382f8edc9b592d94,
     type: 3}
-  prefabPlant: {fileID: 1735496187676943927, guid: 677d8f596690525449fc1b84118a9e38,
+  prefabTap: {fileID: 6462832393181939601, guid: 9311c214da7430d47a80f493ef4caa44,
     type: 3}
-  dataPlantA: {fileID: 11400000, guid: f872419c8ac001542a712f2e81fda949, type: 2}
+  prefabWorker: {fileID: 4141275004835410923, guid: b4903f2e26acf63479554348d16d529e,
+    type: 3}
   season: 0
   year: 0
 --- !u!4 &625828230
@@ -19973,6 +20474,8 @@ Transform:
   - {fileID: 910316794}
   - {fileID: 960445628}
   - {fileID: 573086962}
+  - {fileID: 1266181253}
+  - {fileID: 2074702676}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20084,6 +20587,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &640186755
@@ -20334,6 +20839,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &653972677
@@ -20444,6 +20951,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &655463333
@@ -20554,6 +21063,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &661010070
@@ -20664,6 +21175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &663002631
@@ -20774,6 +21287,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &669790701
@@ -20884,6 +21399,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &671894154
@@ -20994,6 +21511,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &674556381
@@ -21338,6 +21857,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &690570092
@@ -21542,6 +22063,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &694302212
@@ -21652,6 +22175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &694627242
@@ -21762,6 +22287,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &696799222
@@ -21872,6 +22399,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &698392257
@@ -21982,6 +22511,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &700757152
@@ -22092,6 +22623,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &704175027
@@ -22202,6 +22735,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &704963906
@@ -22312,6 +22847,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &705507993
@@ -22514,6 +23051,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &720877537
@@ -22718,6 +23257,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &726686363
@@ -22828,6 +23369,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &727581366
@@ -23032,6 +23575,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &737743071
@@ -23330,6 +23875,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &754093713
@@ -23440,6 +23987,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &756182743
@@ -23596,6 +24145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &770730079
@@ -23706,6 +24257,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &774177135
@@ -23816,6 +24369,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &784653892
@@ -23972,6 +24527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &786502952
@@ -24082,6 +24639,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &787515396
@@ -24192,6 +24751,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &787567484
@@ -24302,6 +24863,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &787607190
@@ -24412,6 +24975,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &790509850
@@ -24616,6 +25181,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &793595028
@@ -24866,6 +25433,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &798594612
@@ -24976,6 +25545,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &801130509
@@ -25180,6 +25751,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &803486642
@@ -25384,6 +25957,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &808384106
@@ -25494,6 +26069,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &809020845
@@ -25650,6 +26227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &814943629
@@ -25760,6 +26339,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &817097449
@@ -25870,6 +26451,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &818106493
@@ -25980,6 +26563,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &821074244
@@ -26230,6 +26815,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &825452362
@@ -26386,8 +26973,104 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
+--- !u!1 &829663399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 829663400}
+  - component: {fileID: 829663403}
+  - component: {fileID: 829663402}
+  - component: {fileID: 829663401}
+  m_Layer: 0
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &829663400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829663399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1874908706}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &829663401
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829663399}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &829663402
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829663399}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 773bce256b6e4ea43b391c9e80e9d576, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &829663403
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829663399}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &833118733
 GameObject:
   m_ObjectHideFlags: 0
@@ -26496,6 +27179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &833994388
@@ -26606,6 +27291,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &835503163
@@ -26716,6 +27403,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &836909184
@@ -26826,6 +27515,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &840493585
@@ -26936,6 +27627,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &846344406
@@ -27046,6 +27739,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &853404472
@@ -27156,6 +27851,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &854276936
@@ -27266,6 +27963,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &855750677
@@ -27564,6 +28263,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &876110038
@@ -27674,6 +28375,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &876190023
@@ -27784,6 +28487,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &885701921
@@ -27894,6 +28599,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &890488746
@@ -28004,6 +28711,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &895015703
@@ -28114,6 +28823,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &896539303
@@ -28412,6 +29123,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &904589872
@@ -28710,6 +29423,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &910316793
@@ -29250,6 +29965,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &912021614
@@ -29360,6 +30077,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &912394391
@@ -29564,6 +30283,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &920455163
@@ -29814,6 +30535,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &929329940
@@ -29924,6 +30647,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &929917961
@@ -30222,6 +30947,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &940012137
@@ -30426,6 +31153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &944929686
@@ -30536,6 +31265,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &945276030
@@ -30740,6 +31471,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &948401476
@@ -30944,6 +31677,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &959526134
@@ -31054,6 +31789,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &960445627
@@ -31357,6 +32094,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &973301315
@@ -31749,6 +32488,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &977833269
@@ -31859,6 +32600,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &978124759
@@ -32015,6 +32758,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &984505565
@@ -32125,6 +32870,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &996318593
@@ -32329,6 +33076,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &999950109
@@ -32439,6 +33188,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1001654390
@@ -32643,6 +33394,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1005524870
@@ -32941,6 +33694,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1018477605
@@ -33051,6 +33806,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1028121443
@@ -33583,6 +34340,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1050304804
@@ -33785,6 +34544,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1061315625
@@ -33895,6 +34656,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1061517353
@@ -34099,6 +34862,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1063439853
@@ -34209,6 +34974,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1063901550
@@ -34319,6 +35086,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1065148059
@@ -34569,6 +35338,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1071181136
@@ -34679,6 +35450,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1073604544
@@ -34789,6 +35562,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1077080006
@@ -34899,6 +35674,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1082188017
@@ -35009,6 +35786,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1083934238
@@ -35165,6 +35944,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1092472542
@@ -35369,6 +36150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1103916603
@@ -35479,6 +36262,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1106775145
@@ -35589,6 +36374,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1118815405
@@ -35887,6 +36674,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1132434132
@@ -35997,6 +36786,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1133239550
@@ -36201,6 +36992,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1141389845
@@ -36451,6 +37244,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1149404995
@@ -36561,6 +37356,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1149955608
@@ -36859,6 +37656,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1157192448
@@ -36969,6 +37768,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1161625295
@@ -37173,6 +37974,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1173935348
@@ -37283,6 +38086,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1183672969
@@ -37393,6 +38198,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1185956553
@@ -37503,6 +38310,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1189617640
@@ -37613,6 +38422,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1197419972
@@ -37723,6 +38534,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1202747762
@@ -37927,6 +38740,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1206377613
@@ -38037,6 +38852,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1210131148
@@ -38147,6 +38964,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1210905608
@@ -38351,6 +39170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1213240898
@@ -38555,6 +39376,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1218693435
@@ -38665,6 +39488,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1220037828
@@ -38775,6 +39600,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1227088947
@@ -38885,6 +39712,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1227743054
@@ -38995,6 +39824,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1229200415
@@ -39105,6 +39936,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1244230240
@@ -39307,6 +40140,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1253686787
@@ -39417,6 +40252,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1256443963
@@ -39527,6 +40364,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1263796294
@@ -39637,8 +40476,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
+--- !u!1 &1266181252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1266181253}
+  m_Layer: 0
+  m_Name: Taps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1266181253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266181252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1874908706}
+  - {fileID: 583852940}
+  - {fileID: 1695119672}
+  m_Father: {fileID: 625828230}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1266848908
 GameObject:
   m_ObjectHideFlags: 0
@@ -39981,6 +40855,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1278607657
@@ -40231,6 +41107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1287842106
@@ -40341,6 +41219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1288995072
@@ -40545,6 +41425,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1303694064
@@ -40655,6 +41537,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1306192197
@@ -41139,6 +42023,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1340776453
@@ -41341,6 +42227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1346245279
@@ -41497,6 +42385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1351453937
@@ -41701,6 +42591,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1365549332
@@ -41905,6 +42797,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1368267133
@@ -42015,6 +42909,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1372482804
@@ -42125,6 +43021,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1385267980
@@ -42235,6 +43133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1389467210
@@ -42345,6 +43245,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1394497593
@@ -42455,6 +43357,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1395975997
@@ -42565,6 +43469,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1396346721
@@ -42675,6 +43581,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1401546025
@@ -42879,6 +43787,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1412993710
@@ -42989,6 +43899,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1415893234
@@ -43099,6 +44011,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1416011999
@@ -43209,6 +44123,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1431198198
@@ -43319,6 +44235,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1431632553
@@ -43429,6 +44347,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1431959070
@@ -43539,6 +44459,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1433133038
@@ -43649,6 +44571,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1434879083
@@ -43759,6 +44683,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1443129056
@@ -43869,6 +44795,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1443343454
@@ -44259,6 +45187,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1457703595
@@ -44369,6 +45299,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1460520117
@@ -44479,6 +45411,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1468425262
@@ -44589,6 +45523,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1470005688
@@ -44793,6 +45729,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1471653860
@@ -44903,6 +45841,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1473145560
@@ -45059,6 +45999,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1480474417
@@ -45169,6 +46111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1482421610
@@ -45279,6 +46223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1487391545
@@ -45389,6 +46335,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1493359719
@@ -45499,6 +46447,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1493850809
@@ -45609,6 +46559,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1494907607
@@ -45719,6 +46671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1502763387
@@ -45829,6 +46783,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1507407224
@@ -45939,6 +46895,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1508716928
@@ -46049,6 +47007,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1516919033
@@ -46393,6 +47353,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1531091549
@@ -46691,6 +47653,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1539164421
@@ -46895,6 +47859,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1551759261
@@ -47005,6 +47971,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1553022198
@@ -47115,6 +48083,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1555510877
@@ -47225,6 +48195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1559513740
@@ -47617,6 +48589,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1575311463
@@ -47727,6 +48701,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1581200487
@@ -47837,6 +48813,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1582431468
@@ -47993,6 +48971,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1585028609
@@ -48103,6 +49083,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1585984080
@@ -48401,6 +49383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1596117406
@@ -48697,6 +49681,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1607887342
@@ -48901,6 +49887,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1611198484
@@ -49105,6 +50093,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1632591385
@@ -49215,6 +50205,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1641968454
@@ -49325,6 +50317,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1642614755
@@ -49435,6 +50429,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1643351620
@@ -49591,6 +50587,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1648646987
@@ -49701,6 +50699,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1651555050
@@ -49843,7 +50843,9 @@ MonoBehaviour:
   moveSpeed: 3
   lookSensitivity: 5
   lookSmoothing: 0.5
+  hoseDistance: 5
   hoseRemaining: 0
+  hoseCapacity: 30
 --- !u!4 &1654719849
 Transform:
   m_ObjectHideFlags: 0
@@ -49983,6 +50985,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1662523152
@@ -50093,6 +51097,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1663961816
@@ -50249,6 +51255,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1667311788
@@ -50405,6 +51413,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1669264774
@@ -50749,6 +51759,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1683885073
@@ -50859,6 +51871,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1694439335
@@ -50969,8 +51983,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
+--- !u!1 &1695119671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1695119672}
+  - component: {fileID: 1695119674}
+  - component: {fileID: 1695119673}
+  m_Layer: 0
+  m_Name: Tap(Clone)
+  m_TagString: Tap
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1695119672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695119671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6, y: 0, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 173660917}
+  m_Father: {fileID: 1266181253}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1695119673
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695119671}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1.5, z: 0.75}
+  m_Center: {x: 0, y: 1.25, z: 0}
+--- !u!114 &1695119674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695119671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dadc6c3ba1c9bc4a9442daab5d478f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1698353830
 GameObject:
   m_ObjectHideFlags: 0
@@ -51267,6 +52341,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1704776093
@@ -51377,6 +52453,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1708365186
@@ -51581,6 +52659,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1710035736
@@ -51831,6 +52911,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1715865744
@@ -52035,6 +53117,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1717120332
@@ -52145,6 +53229,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1721914936
@@ -52255,6 +53341,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1728461456
@@ -52365,6 +53453,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1736894996
@@ -52475,6 +53565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1740487951
@@ -52585,6 +53677,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1743741504
@@ -52695,6 +53789,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1747439054
@@ -52805,6 +53901,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1750403844
@@ -53009,6 +54107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1755120172
@@ -53259,6 +54359,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1758376486
@@ -53369,6 +54471,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1759014558
@@ -53479,6 +54583,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1759443241
@@ -53589,6 +54695,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1760123701
@@ -53699,6 +54807,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1764773510
@@ -53809,6 +54919,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1769090089
@@ -54107,6 +55219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1778487463
@@ -54451,6 +55565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1785261924
@@ -54655,6 +55771,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1796711120
@@ -55281,6 +56399,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1806960393
@@ -55391,6 +56511,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1807606040
@@ -55501,6 +56623,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1812524644
@@ -55611,6 +56735,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1815158731
@@ -56049,6 +57175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1842453362
@@ -56159,6 +57287,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1845633276
@@ -56269,6 +57399,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1850839234
@@ -56473,6 +57605,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1863721095
@@ -56769,8 +57903,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
+--- !u!1 &1874908705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1874908706}
+  - component: {fileID: 1874908708}
+  - component: {fileID: 1874908707}
+  m_Layer: 0
+  m_Name: Tap(Clone)
+  m_TagString: Tap
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1874908706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874908705}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15, y: 0, z: 11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 829663400}
+  m_Father: {fileID: 1266181253}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1874908707
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874908705}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1.5, z: 0.75}
+  m_Center: {x: 0, y: 1.25, z: 0}
+--- !u!114 &1874908708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874908705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dadc6c3ba1c9bc4a9442daab5d478f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1877231428
 GameObject:
   m_ObjectHideFlags: 0
@@ -56879,6 +58073,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1883998447
@@ -56989,6 +58185,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1884787279
@@ -57099,6 +58297,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1895025998
@@ -57209,6 +58409,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1904052889
@@ -57413,6 +58615,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1927666649
@@ -57523,6 +58727,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1933403219
@@ -57727,6 +58933,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1943849268
@@ -57837,6 +59045,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1945402097
@@ -57947,6 +59157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1948986139
@@ -58057,6 +59269,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1950932214
@@ -58167,6 +59381,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1953079329
@@ -58371,6 +59587,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1956612772
@@ -58481,6 +59699,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1959976135
@@ -58591,6 +59811,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1963323805
@@ -58795,6 +60017,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1964661544
@@ -58951,6 +60175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1967443343
@@ -59201,6 +60427,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1974519915
@@ -59311,6 +60539,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1975095228
@@ -59467,6 +60697,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1978518040
@@ -59577,6 +60809,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1978653308
@@ -59687,6 +60921,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1983527299
@@ -59797,6 +61033,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1984025831
@@ -59907,6 +61145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1991356521
@@ -60017,6 +61257,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1992916352
@@ -60127,6 +61369,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1993410812
@@ -60237,6 +61481,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1997318578
@@ -60441,6 +61687,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2006326684
@@ -60551,6 +61799,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2027128127
@@ -60661,6 +61911,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2027442387
@@ -60771,6 +62023,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2028205002
@@ -60881,6 +62135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2028485964
@@ -60991,6 +62247,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2028626911
@@ -61101,6 +62359,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2033180193
@@ -61257,6 +62517,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2047845293
@@ -61601,6 +62863,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2058575452
@@ -61711,6 +62975,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2060501197
@@ -61821,6 +63087,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2063741508
@@ -61931,6 +63199,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2066284119
@@ -62041,6 +63311,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2074448596
@@ -62151,8 +63423,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
+--- !u!1 &2074702675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2074702676}
+  m_Layer: 0
+  m_Name: Workers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2074702676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074702675}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 625828230}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2075183306
 GameObject:
   m_ObjectHideFlags: 0
@@ -62261,6 +63565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2075298601
@@ -62371,6 +63677,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2085566531
@@ -62669,6 +63977,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2090115527
@@ -62825,6 +64135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2091587457
@@ -62935,6 +64247,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2096216753
@@ -63045,6 +64359,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2102683643
@@ -63155,6 +64471,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2105231538
@@ -63405,6 +64723,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2120447961
@@ -63515,6 +64835,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2123139897
@@ -63719,5 +65041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant: {fileID: 0}
   wet: 0
+  plantInProgress: 0
+  tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}

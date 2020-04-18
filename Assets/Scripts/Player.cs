@@ -18,14 +18,18 @@ public class Player : MonoBehaviour {
     private float lookSmoothing;
     private Vector2 lookIncrement;
     private Vector2 lookSmooth;
+    [SerializeField]
+    private float hoseDistance;
 
     // Public variables
+    [HideInInspector]
     public float hoseRemaining;
+    public float hoseCapacity;
 
     // Start is called before the first frame update
     void Start() {
         main = this;
-        hoseRemaining = 30.0f;
+        hoseRemaining = hoseCapacity;
 
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -61,13 +65,18 @@ public class Player : MonoBehaviour {
                     // Reduce remaining water
                     hoseRemaining -= Time.deltaTime;
                     // Wake tiles wet
-
-                    RaycastHit hit;
-                    if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out hit, 500, 1 << 8)) {
-                        if (hit.transform.CompareTag("Tile")) {
-                            hit.transform.GetComponent<Tile>().Water();
+                    if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTile, hoseDistance, 1 << 8)) {
+                        if (hitTile.transform.CompareTag("Tile")) {
+                            hitTile.transform.GetComponent<Tile>().Water();
                         }
                     }
+                }
+            }
+
+            // Water topup
+            if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTap, 3.0f)) {
+                if (hitTap.transform.CompareTag("Tap")) {
+                    hoseRemaining = Mathf.Clamp(hoseRemaining + (Time.deltaTime * 2.0f), 0, hoseCapacity);
                 }
             }
         }

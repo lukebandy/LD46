@@ -14,26 +14,34 @@ public class GameController : MonoBehaviour {
     [SerializeField]
     private GameObject prefabFences;
     [SerializeField]
-    private GameObject prefabPlant;
+    private GameObject prefabTap;
     [SerializeField]
-    private PlantData dataPlantA;
+    private GameObject prefabWorker;
 
     // Public variables
+    [HideInInspector]
     public Seasons season;
+    [HideInInspector]
     public int year;
-    private float seasonProgress;
 
     // Private variables
+    private float seasonProgress;
 
     // Start is called before the first frame update
     void Start() {
         main = this;
         GenerateMap();
-        Instantiate(prefabPlant, transform.Find("Plants")).GetComponent<Plant>().Setup(15, 13, dataPlantA);
+
+        Object[] objs = Resources.LoadAll("Plants", typeof(PlantData));
+        Plant.plantDataAll = new PlantData[objs.Length];
+        for (int i = 0; i < objs.Length; i++)
+            Plant.plantDataAll[i] = (PlantData)objs[i];
 
         season = Seasons.Spring;
         year = 1;
         seasonProgress = 0.0f;
+
+        Instantiate(prefabWorker, new Vector3(Random.Range(0, Tile.tiles.GetLength(0) - 1.0f), 0, Random.Range(0, Tile.tiles.GetLength(1) - 1.0f)), Quaternion.identity, transform.Find("Workers"));
     }
 
     // Update is called once per frame
@@ -58,7 +66,7 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    public void GenerateMap(int sizeX = 20, int sizeY = 20, int hoses = 3) {
+    public void GenerateMap(int sizeX = 20, int sizeY = 20, int taps = 3) {
         // Tiles
         int child = 0;
         Tile.tiles = new Tile[sizeX, sizeY];
@@ -111,6 +119,25 @@ public class GameController : MonoBehaviour {
         }
         while (child + 1 < transform.Find("Fences").childCount) {
             transform.Find("Fences").GetChild(child).gameObject.SetActive(false);
+            child++;
+        }
+
+        // Taps
+        child = 0;
+        int tapsPlaced = 0;
+        while (tapsPlaced < taps) {
+            Tile tile = Tile.tiles[Random.Range(0, Tile.tiles.GetLength(0)), Random.Range(0, Tile.tiles.GetLength(1))];
+            if (!tile.tap) {
+                tile.tap = true;
+                if (child + 1 > transform.Find("Taps").childCount)
+                    Instantiate(prefabTap, transform.Find("Taps"));
+                transform.Find("Taps").GetChild(child).position = tile.transform.position;
+                tapsPlaced++;
+                child++;
+            }
+        }
+        while (child + 1 < transform.Find("Taps").childCount) {
+            transform.Find("Taps").GetChild(child).gameObject.SetActive(false);
             child++;
         }
     }
