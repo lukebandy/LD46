@@ -9,9 +9,9 @@ public class Tile : MonoBehaviour {
 
     // Public variables
     public Plant plant;
+    public bool wet;
 
     // Private variables
-    private bool wet;
     private float wetTimer;
     private MeshRenderer meshRenderer;
     [SerializeField]
