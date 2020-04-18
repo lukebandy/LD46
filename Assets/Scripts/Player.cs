@@ -20,6 +20,7 @@ public class Player : MonoBehaviour {
     private Vector2 lookSmooth;
     [SerializeField]
     private float hoseDistance;
+    private ParticleSystem particleSystem;
 
     // Public variables
     [HideInInspector]
@@ -29,6 +30,8 @@ public class Player : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         main = this;
+        particleSystem = GetComponentInChildren<ParticleSystem>();
+
         hoseRemaining = hoseCapacity;
 
         Cursor.lockState = CursorLockMode.Locked;
@@ -60,6 +63,11 @@ public class Player : MonoBehaviour {
             transform.Translate(straffe, 0, translation);
 
             // Hose
+            if (Input.GetMouseButtonDown(0))
+                particleSystem.Play();
+            else if (Input.GetMouseButtonUp(0))
+                particleSystem.Stop();
+
             if (Input.GetMouseButton(0)) {
                 if (hoseRemaining > 0) {
                     // Reduce remaining water
