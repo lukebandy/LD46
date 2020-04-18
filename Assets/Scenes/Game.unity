@@ -2070,7 +2070,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &61224187
@@ -4485,6 +4485,100 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112328051}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &112798149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 112798150}
+  - component: {fileID: 112798153}
+  - component: {fileID: 112798152}
+  - component: {fileID: 112798151}
+  m_Layer: 0
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &112798150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112798149}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 583852940}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &112798151
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112798149}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &112798152
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112798149}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 773bce256b6e4ea43b391c9e80e9d576, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &112798153
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112798149}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &120622703
 GameObject:
   m_ObjectHideFlags: 0
@@ -4706,7 +4800,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &127169360
@@ -5118,7 +5212,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &140353368
@@ -5867,6 +5961,100 @@ MonoBehaviour:
   tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
+--- !u!1 &173660916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 173660917}
+  - component: {fileID: 173660920}
+  - component: {fileID: 173660919}
+  - component: {fileID: 173660918}
+  m_Layer: 0
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &173660917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173660916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1695119672}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &173660918
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173660916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &173660919
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173660916}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 773bce256b6e4ea43b391c9e80e9d576, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &173660920
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173660916}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &175491432
 GameObject:
   m_ObjectHideFlags: 0
@@ -5976,7 +6164,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &176210016
@@ -6882,7 +7070,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &222862929
@@ -7040,7 +7228,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &249655184
@@ -7488,7 +7676,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &266110625
@@ -7758,7 +7946,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &273194844
@@ -8074,7 +8262,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &276104277
@@ -9512,7 +9700,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &304537205
@@ -9736,7 +9924,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &306549900
@@ -10866,7 +11054,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &336554597
@@ -11090,7 +11278,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &338127313
@@ -12088,7 +12276,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &371715942
@@ -14136,7 +14324,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &457411032
@@ -14248,7 +14436,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &461080887
@@ -15462,7 +15650,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &485604248
@@ -15948,7 +16136,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &495210810
@@ -17544,7 +17732,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &558464809
@@ -17656,7 +17844,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &558879888
@@ -18086,7 +18274,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &568019868
@@ -18404,7 +18592,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &573086961
@@ -18798,7 +18986,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &583850226
@@ -18847,6 +19035,64 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!1 &583852939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 583852940}
+  - component: {fileID: 583852942}
+  - component: {fileID: 583852941}
+  m_Layer: 0
+  m_Name: Tap(Clone)
+  m_TagString: Tap
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &583852940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583852939}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14, y: 0, z: 14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 112798150}
+  m_Father: {fileID: 1266181253}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &583852941
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583852939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1.5, z: 0.75}
+  m_Center: {x: 0, y: 1.25, z: 0}
+--- !u!114 &583852942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583852939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dadc6c3ba1c9bc4a9442daab5d478f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &589890970
 GameObject:
   m_ObjectHideFlags: 0
@@ -19302,7 +19548,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &605332960
@@ -20208,6 +20454,8 @@ MonoBehaviour:
     type: 3}
   prefabFences: {fileID: 7415134890514364999, guid: c40c5c42cd503f64382f8edc9b592d94,
     type: 3}
+  prefabTap: {fileID: 6462832393181939601, guid: 9311c214da7430d47a80f493ef4caa44,
+    type: 3}
   season: 0
   year: 0
 --- !u!4 &625828230
@@ -20224,6 +20472,8 @@ Transform:
   - {fileID: 910316794}
   - {fileID: 960445628}
   - {fileID: 573086962}
+  - {fileID: 1266181253}
+  - {fileID: 2074702676}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21148,7 +21398,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &671894154
@@ -22036,7 +22286,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &696799222
@@ -22260,7 +22510,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &700757152
@@ -23118,7 +23368,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &727581366
@@ -24118,7 +24368,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &784653892
@@ -24276,7 +24526,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &786502952
@@ -25500,7 +25750,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &803486642
@@ -26200,7 +26450,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &818106493
@@ -26722,9 +26972,103 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
+--- !u!1 &829663399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 829663400}
+  - component: {fileID: 829663403}
+  - component: {fileID: 829663402}
+  - component: {fileID: 829663401}
+  m_Layer: 0
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &829663400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829663399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1874908706}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &829663401
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829663399}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &829663402
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829663399}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 773bce256b6e4ea43b391c9e80e9d576, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &829663403
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829663399}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &833118733
 GameObject:
   m_ObjectHideFlags: 0
@@ -26946,7 +27290,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &835503163
@@ -30302,7 +30646,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &929917961
@@ -32255,7 +32599,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &978124759
@@ -34741,7 +35085,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1065148059
@@ -35599,7 +35943,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1092472542
@@ -38395,7 +38739,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1206377613
@@ -39367,7 +39711,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1227743054
@@ -39591,7 +39935,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1244230240
@@ -40134,6 +40478,39 @@ MonoBehaviour:
   tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
+--- !u!1 &1266181252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1266181253}
+  m_Layer: 0
+  m_Name: Taps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1266181253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266181252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1874908706}
+  - {fileID: 583852940}
+  - {fileID: 1695119672}
+  m_Father: {fileID: 625828230}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1266848908
 GameObject:
   m_ObjectHideFlags: 0
@@ -40729,7 +41106,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1287842106
@@ -40841,7 +41218,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1288995072
@@ -42419,7 +42796,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1368267133
@@ -43633,7 +44010,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1416011999
@@ -44193,7 +44570,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1434879083
@@ -44305,7 +44682,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1443129056
@@ -45145,7 +45522,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1470005688
@@ -46517,7 +46894,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1508716928
@@ -47481,7 +47858,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1551759261
@@ -48211,7 +48588,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1575311463
@@ -48323,7 +48700,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1581200487
@@ -48435,7 +48812,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1582431468
@@ -50051,7 +50428,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1643351620
@@ -50464,7 +50841,9 @@ MonoBehaviour:
   moveSpeed: 3
   lookSensitivity: 5
   lookSmoothing: 0.5
+  hoseDistance: 5
   hoseRemaining: 0
+  hoseCapacity: 30
 --- !u!4 &1654719849
 Transform:
   m_ObjectHideFlags: 0
@@ -50875,7 +51254,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1667311788
@@ -51379,7 +51758,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1683885073
@@ -51491,7 +51870,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1694439335
@@ -51606,6 +51985,64 @@ MonoBehaviour:
   tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
+--- !u!1 &1695119671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1695119672}
+  - component: {fileID: 1695119674}
+  - component: {fileID: 1695119673}
+  m_Layer: 0
+  m_Name: Tap(Clone)
+  m_TagString: Tap
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1695119672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695119671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6, y: 0, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 173660917}
+  m_Father: {fileID: 1266181253}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1695119673
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695119671}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1.5, z: 0.75}
+  m_Center: {x: 0, y: 1.25, z: 0}
+--- !u!114 &1695119674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695119671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dadc6c3ba1c9bc4a9442daab5d478f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1698353830
 GameObject:
   m_ObjectHideFlags: 0
@@ -51903,7 +52340,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1704776093
@@ -52015,7 +52452,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1708365186
@@ -52903,7 +53340,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1728461456
@@ -53239,7 +53676,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1743741504
@@ -54033,7 +54470,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1759014558
@@ -56297,7 +56734,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1815158731
@@ -56849,7 +57286,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1845633276
@@ -57468,6 +57905,64 @@ MonoBehaviour:
   tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
+--- !u!1 &1874908705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1874908706}
+  - component: {fileID: 1874908708}
+  - component: {fileID: 1874908707}
+  m_Layer: 0
+  m_Name: Tap(Clone)
+  m_TagString: Tap
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1874908706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874908705}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15, y: 0, z: 11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 829663400}
+  m_Father: {fileID: 1266181253}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1874908707
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874908705}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1.5, z: 0.75}
+  m_Center: {x: 0, y: 1.25, z: 0}
+--- !u!114 &1874908708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874908705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dadc6c3ba1c9bc4a9442daab5d478f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1877231428
 GameObject:
   m_ObjectHideFlags: 0
@@ -57577,7 +58072,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1883998447
@@ -57689,7 +58184,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1884787279
@@ -58119,7 +58614,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1001 &1922118087
@@ -58842,7 +59337,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1950932214
@@ -59590,7 +60085,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1964661544
@@ -60494,7 +60989,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &1983527299
@@ -61260,7 +61755,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2006326684
@@ -61484,7 +61979,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2027442387
@@ -62548,7 +63043,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2060501197
@@ -62999,6 +63494,36 @@ MonoBehaviour:
   tap: 0
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
+--- !u!1 &2074702675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2074702676}
+  m_Layer: 0
+  m_Name: Workers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2074702676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074702675}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 625828230}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2075183306
 GameObject:
   m_ObjectHideFlags: 0
@@ -63520,7 +64045,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2090115527
@@ -64014,7 +64539,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2105231538
@@ -64266,7 +64791,7 @@ MonoBehaviour:
   plant: {fileID: 0}
   wet: 0
   plantInProgress: 0
-  tap: 0
+  tap: 1
   materialDry: {fileID: 2100000, guid: 049707b6cbef5c14ca7f16d4bc5b7401, type: 2}
   materialWet: {fileID: 2100000, guid: c8597117a4bf08c458cfcba4b50f6840, type: 2}
 --- !u!1 &2120447961
