@@ -26,7 +26,8 @@ public class UIController : MonoBehaviour {
     [SerializeField]
     private Sprite hudLivesSkull;
     [SerializeField]
-    private TextMeshProUGUI hudWaterRemaining;
+    private RectTransform hudWaterRemaining;
+    private float hudWaterRemainingWidth;
 
     [SerializeField]
     private GameObject pause;
@@ -43,13 +44,17 @@ public class UIController : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         settingsOpen = false;
+
+        mainQuit.SetActive(Application.platform != RuntimePlatform.WebGLPlayer);
+        pauseQuit.SetActive(Application.platform != RuntimePlatform.WebGLPlayer);
+
+        hudWaterRemainingWidth = hudWaterRemaining.sizeDelta.x;
     }
 
     // Update is called once per frame
     void Update() {
         if (GameController.main.gameState == GameController.GameStates.MainMenu && !settingsOpen) {
             main.SetActive(true);
-            mainQuit.SetActive(Application.platform != RuntimePlatform.WebGLPlayer);
         }
         else
             main.SetActive(false);
@@ -64,7 +69,7 @@ public class UIController : MonoBehaviour {
                 else
                     hudLives.GetChild(9 - i).GetComponent<Image>().sprite = hudLivesSkull;
             }
-            hudWaterRemaining.text = Mathf.Clamp(Mathf.RoundToInt(100 * (Player.main.hoseRemaining / Player.main.hoseCapacity)), 0, 100).ToString() + "%";
+            hudWaterRemaining.sizeDelta = new Vector2(hudWaterRemainingWidth * (Player.main.hoseRemaining / Player.main.hoseCapacity), hudWaterRemaining.sizeDelta.y);
         }
         else
             hud.SetActive(false);
