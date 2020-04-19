@@ -87,12 +87,6 @@ public class GameController : MonoBehaviour {
                     }
                     seasonProgress -= seasonLength;
                 }
-
-
-                if (Input.GetKeyDown("space")) {
-                    gameState = GameStates.Intro;
-                    Player.main.Setup();
-                }
                 break;
 
             case GameStates.Intro:

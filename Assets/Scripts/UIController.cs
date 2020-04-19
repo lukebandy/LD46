@@ -27,14 +27,18 @@ public class UIController : MonoBehaviour {
     [SerializeField]
     private GameObject gameover;
 
+    [SerializeField]
+    private GameObject settings;
+    private bool settingsOpen;
+
     // Start is called before the first frame update
     void Start() {
-        
+        settingsOpen = false;
     }
 
     // Update is called once per frame
     void Update() {
-        if (GameController.main.gameState == GameController.GameStates.MainMenu) {
+        if (GameController.main.gameState == GameController.GameStates.MainMenu && !settingsOpen) {
             main.SetActive(true);
         }
         else
@@ -50,7 +54,7 @@ public class UIController : MonoBehaviour {
         else
             hud.SetActive(false);
 
-        if (GameController.main.gameState == GameController.GameStates.Paused) {
+        if (GameController.main.gameState == GameController.GameStates.Paused && !settingsOpen) {
             pause.SetActive(true);
         }
         else
@@ -61,6 +65,13 @@ public class UIController : MonoBehaviour {
         }
         else {
             gameover.SetActive(false);
+        }
+
+        if (settingsOpen) {
+            settings.SetActive(false);
+        }
+        else {
+            settings.SetActive(false);
         }
     }
 
@@ -81,5 +92,13 @@ public class UIController : MonoBehaviour {
 
     public void Quit() {
         Application.Quit();
+    }
+
+    public void Settings() {
+        settingsOpen = true;
+    }
+
+    public void SettingsExit() {
+        settingsOpen = false;
     }
 }
