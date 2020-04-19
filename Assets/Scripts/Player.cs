@@ -24,6 +24,8 @@ public class Player : MonoBehaviour {
     [SerializeField]
     private AudioSource audioWater;
     [SerializeField]
+    private AudioSource audioEmpty;
+    [SerializeField]
     private AudioSource audioWalking;
 
     // Public variables
@@ -69,11 +71,17 @@ public class Player : MonoBehaviour {
                 emission.enabled = true;
                 // Reduce remaining water
                 hoseRemaining -= Time.deltaTime;
+                if (hoseRemaining <= 0)
+                    audioEmpty.Play();
                 // Wake tiles wet
                 if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTile, hoseDistance, 1 << 8)) {
                     if (hitTile.transform.CompareTag("Tile")) {
                         hitTile.transform.GetComponent<Tile>().Water();
                     }
+                }
+                // Annoy workers
+                if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitWorker, hoseDistance, 1 << 10)) {
+                    hitWorker.transform.GetComponent<Worker>().Annoy();
                 }
             }
             else {

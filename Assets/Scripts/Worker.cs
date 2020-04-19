@@ -12,17 +12,33 @@ public class Worker : MonoBehaviour {
     private enum Action { Idle, Walking, Planting }
     private Action action;
     private Tile target;
+    private AudioSource audioSource;
     [SerializeField]
-    private AudioSource audioWhew;
+    private AudioClip[] audioDone;
+    [SerializeField]
+    private AudioClip[] audioAnnoyed;
+    private float audioAnnoyedTimout;
+    private MeshRenderer meshRenderer;
+    [SerializeField]
+    private Material materialWalking;
+    [SerializeField]
+    private Material materialWorking;
 
     public void Setup() {
         action = Action.Idle;
         timeIdleRemaning = Random.Range(5.0f, 10.0f);
+        if (meshRenderer == null)
+            meshRenderer = GetComponentInChildren<MeshRenderer>();
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update() {
         if (GameController.main.gameState != GameController.GameStates.Paused) {
+            if (audioAnnoyedTimout > 0)
+                audioAnnoyedTimout -= Time.deltaTime;
+
             // Do stuff
             switch (action) {
                 case Action.Idle:
@@ -102,7 +118,8 @@ public class Worker : MonoBehaviour {
                         }
 
                         // Reset action state
-                        audioWhew.Play();
+                        audioSource.clip = audioDone[Random.Range(0, audioDone.Length)];
+                        audioSource.Play();
                         target.plantInProgress = false;
                         action = Action.Idle;
                         timeIdleRemaning = Random.Range(5.0f, 10.0f);
@@ -122,5 +139,17 @@ public class Worker : MonoBehaviour {
         }
 
         // TODO: Update material to show angle and action
+        if (action == Action.Planting)
+            meshRenderer.material = materialWorking;
+        else
+            meshRenderer.material = materialWalking;
+    }
+
+    public void Annoy() {
+        if (audioAnnoyedTimout <= 0) {
+            audioAnnoyedTimout = 5.0f;
+            audioSource.clip = audioAnnoyed[Random.Range(0, audioAnnoyed.Length)];
+            audioSource.Play();
+        }
     }
 }
