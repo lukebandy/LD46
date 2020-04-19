@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class UIController : MonoBehaviour {
@@ -9,6 +10,8 @@ public class UIController : MonoBehaviour {
     private GameObject main;
     [SerializeField]
     private TextMeshProUGUI mainHighscore;
+    [SerializeField]
+    private GameObject mainQuit;
 
     [SerializeField]
     private GameObject hud;
@@ -17,12 +20,18 @@ public class UIController : MonoBehaviour {
     [SerializeField]
     private TextMeshProUGUI hudSeason;
     [SerializeField]
-    private TextMeshProUGUI hudDeaths;
+    private Transform hudLives;
+    [SerializeField]
+    private Sprite hudLivesPlant;
+    [SerializeField]
+    private Sprite hudLivesSkull;
     [SerializeField]
     private TextMeshProUGUI hudWaterRemaining;
 
     [SerializeField]
     private GameObject pause;
+    [SerializeField]
+    private GameObject pauseQuit;
 
     [SerializeField]
     private GameObject gameover;
@@ -40,6 +49,7 @@ public class UIController : MonoBehaviour {
     void Update() {
         if (GameController.main.gameState == GameController.GameStates.MainMenu && !settingsOpen) {
             main.SetActive(true);
+            mainQuit.SetActive(Application.platform != RuntimePlatform.WebGLPlayer);
         }
         else
             main.SetActive(false);
@@ -48,7 +58,12 @@ public class UIController : MonoBehaviour {
             hud.SetActive(true);
             hudBalance.text = "£" + GameController.main.farmValue.ToString();
             hudSeason.text = GameController.main.season.ToString() + " - Year " + GameController.main.year.ToString();
-            hudDeaths.text = "Deaths: " + Plant.deaths.ToString() + "/10";
+            for (int i = 0; i < 10; i++) {
+                if (Plant.deaths <= i)
+                    hudLives.GetChild(9 - i).GetComponent<Image>().sprite = hudLivesPlant;
+                else
+                    hudLives.GetChild(9 - i).GetComponent<Image>().sprite = hudLivesSkull;
+            }
             hudWaterRemaining.text = Mathf.Clamp(Mathf.RoundToInt(100 * (Player.main.hoseRemaining / Player.main.hoseCapacity)), 0, 100).ToString() + "%";
         }
         else
