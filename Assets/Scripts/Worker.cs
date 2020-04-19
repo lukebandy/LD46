@@ -9,10 +9,11 @@ public class Worker : MonoBehaviour {
     private GameObject prefabPlant;
     private float timeIdleRemaning;
     private float timePlantRemaining;
-
     private enum Action { Idle, Walking, Planting }
     private Action action;
     private Tile target;
+    [SerializeField]
+    private AudioSource audioWhew;
 
     public void Setup() {
         action = Action.Idle;
@@ -101,6 +102,7 @@ public class Worker : MonoBehaviour {
                         }
 
                         // Reset action state
+                        audioWhew.Play();
                         target.plantInProgress = false;
                         action = Action.Idle;
                         timeIdleRemaning = Random.Range(5.0f, 10.0f);

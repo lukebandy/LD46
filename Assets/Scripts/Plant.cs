@@ -77,24 +77,27 @@ public class Plant : MonoBehaviour {
                     gameObject.SetActive(false);
                 }
             }
+        }
+        else {
+            timeGrowProgress += Time.deltaTime;
+        }
 
-            // Update material to reflect current state
-            if (!died) {
-                if (timeGrowProgress < plantData.growTime * 0.5f)
-                    meshRenderer.material = plantData.materialSproutAlive;
-                else if (timeGrowProgress < plantData.growTime)
-                    meshRenderer.material = plantData.materialGrowingAlive;
-                else
-                    meshRenderer.material = plantData.materialGrownAlive;
-            }
-            else {
-                if (timeGrowProgress < plantData.growTime * 0.5f)
-                    meshRenderer.material = plantData.materialSproutDead;
-                else if (timeGrowProgress < plantData.growTime)
-                    meshRenderer.material = plantData.materialGrowingDead;
-                else
-                    meshRenderer.material = plantData.materialGrownDead;
-            }
+        // Update material to reflect current state
+        if (!died) {
+            if (timeGrowProgress < plantData.growTime * 0.5f)
+                meshRenderer.material = plantData.materialSproutAlive;
+            else if (timeGrowProgress < plantData.growTime)
+                meshRenderer.material = plantData.materialGrowingAlive;
+            else
+                meshRenderer.material = plantData.materialGrownAlive;
+        }
+        else {
+            if (timeGrowProgress < plantData.growTime * 0.5f)
+                meshRenderer.material = plantData.materialSproutDead;
+            else if (timeGrowProgress < plantData.growTime)
+                meshRenderer.material = plantData.materialGrowingDead;
+            else
+                meshRenderer.material = plantData.materialGrownDead;
         }
     }
 

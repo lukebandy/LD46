@@ -31,9 +31,13 @@ public class Player : MonoBehaviour {
     void Start() {
         main = this;
         particleSystem = GetComponentInChildren<ParticleSystem>();
+        Setup();
     }
 
     public void Setup() {
+        transform.position = new Vector3((Tile.tiles.GetLength(0) - 1) * 0.5f, 1.5f, (Tile.tiles.GetLength(1) - 1) * 0.5f);
+        transform.rotation = Quaternion.Euler(0, 180, 0);
+        lookIncrement.x = 180;
         hoseRemaining = hoseCapacity;
     }
 

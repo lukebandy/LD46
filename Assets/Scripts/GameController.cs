@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour {
     // Static variables
     public static GameController main;
     public enum Seasons { Spring, Autumn, Summer, Winter }
+    public enum GameStates { MainMenu, Intro, Gameplay, Paused, Outro }
 
     // Prefabs
     [SerializeField]
@@ -17,6 +18,10 @@ public class GameController : MonoBehaviour {
     private GameObject prefabTap;
     [SerializeField]
     private GameObject prefabWorker;
+    [SerializeField]
+    private GameObject prefabGrass;
+    [SerializeField]
+    private GameObject prefabTree;
 
     // Public variables
     [HideInInspector]
@@ -25,17 +30,17 @@ public class GameController : MonoBehaviour {
     public int year;
     [HideInInspector]
     public int farmValue;
+    [HideInInspector]
+    public GameStates gameState;
+    public new Camera camera;
 
     // Private variables
     private float seasonProgress;
     [SerializeField]
     private float seasonLength;
-    [SerializeField]
-    public new Camera camera;
     private Vector3 cameraPosition;
     private Quaternion cameraRotation;
-    public enum GameStates { MainMenu, Intro, Gameplay, Paused, Outro }
-    public GameStates gameState;
+
 
     // Start is called before the first frame update
     void Start() {
@@ -47,7 +52,7 @@ public class GameController : MonoBehaviour {
         for (int i = 0; i < objs.Length; i++)
             Plant.plantDataAll[i] = (PlantData)objs[i];
 
-
+        camera.gameObject.SetActive(true);
         cameraPosition = camera.transform.position;
         cameraRotation = camera.transform.rotation;
 
@@ -64,6 +69,26 @@ public class GameController : MonoBehaviour {
 
         switch(gameState) {
             case GameStates.MainMenu:
+                seasonProgress += Time.deltaTime;
+                if (seasonProgress >= seasonLength) {
+                    switch (season) {
+                        case Seasons.Spring:
+                            season = Seasons.Summer;
+                            break;
+                        case Seasons.Summer:
+                            season = Seasons.Autumn;
+                            break;
+                        case Seasons.Autumn:
+                            season = Seasons.Winter;
+                            break;
+                        case Seasons.Winter:
+                            season = Seasons.Spring;
+                            break;
+                    }
+                    seasonProgress -= seasonLength;
+                }
+
+
                 if (Input.GetKeyDown("space")) {
                     gameState = GameStates.Intro;
                 }
@@ -79,6 +104,7 @@ public class GameController : MonoBehaviour {
                     season = Seasons.Spring;
                     year = 1;
                     seasonProgress = 0.0f;
+                    farmValue = 0;
                     Plant.deaths = 0;
                     Player.main.Setup();
                     // Setup workers
@@ -108,7 +134,6 @@ public class GameController : MonoBehaviour {
                     Cursor.lockState = CursorLockMode.Locked;
 
                     if (Plant.deaths > 10) {
-                        Debug.Log("10 deaths - game over");
                         camera.gameObject.SetActive(true);
                         gameState = GameStates.Outro;
                     }
@@ -144,7 +169,7 @@ public class GameController : MonoBehaviour {
                                 }
                                 break;
                         }
-                        Plant.deaths = 0;
+                        //Plant.deaths = 0;
                         seasonProgress -= seasonLength;
                     }
                 }
@@ -167,7 +192,7 @@ public class GameController : MonoBehaviour {
         }
     }
 
-    public void GenerateMap(int sizeX = 20, int sizeY = 20, int taps = 3) {
+    public void GenerateMap(int sizeX = 20, int sizeY = 20, int taps = 3, int border = 5) {
         // Tiles
         int child = 0;
         Tile.tiles = new Tile[sizeX, sizeY];
@@ -239,6 +264,67 @@ public class GameController : MonoBehaviour {
         }
         while (child + 1 < transform.Find("Taps").childCount) {
             transform.Find("Taps").GetChild(child).gameObject.SetActive(false);
+            child++;
+        }
+
+        // Grass
+        child = 0;
+        for (int x = -border; x < sizeX + border; x++) {
+            for (int y = -border; y < sizeY + border; y++) {
+                if (x < 0 || x >= sizeX || y < 0 || y >= sizeY) {
+                    if (child + 1 > transform.Find("Grass").childCount)
+                        Instantiate(prefabGrass, transform.Find("Grass"));
+                    transform.Find("Grass").GetChild(child).position = new Vector3(x, 0, y);
+                    transform.Find("Grass").GetChild(child).gameObject.SetActive(true);
+                    child++;
+                }
+            }
+        }
+        while (child + 1 < transform.Find("Grass").childCount) {
+            transform.Find("Grass").GetChild(child).gameObject.SetActive(false);
+            child++;
+        }
+
+        // Trees
+        child = 0;
+        for (int i = 0; i < Random.Range(5, 8); i++) {
+            if (child + 1 > transform.Find("Trees").childCount)
+                Instantiate(prefabTree, transform.Find("Trees"));
+            transform.Find("Trees").GetChild(child).position = new Vector3(Random.Range(2 - border, sizeX + border - 2), 4.5f, Random.Range(-2, -border));
+            transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 180, 0);
+            transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
+            child++;
+        }
+
+        for (int i = 0; i < Random.Range(5, 8); i++) {
+            if (child + 1 > transform.Find("Trees").childCount)
+                Instantiate(prefabTree, transform.Find("Trees"));
+            transform.Find("Trees").GetChild(child).position = new Vector3(Random.Range(2 - border, sizeX + border - 2), 4.5f, Random.Range(sizeX, sizeX + border));
+            transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 0, 0);
+            transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
+            child++;
+        }
+
+        for (int i = 0; i < Random.Range(5, 8); i++) {
+            if (child + 1 > transform.Find("Trees").childCount)
+                Instantiate(prefabTree, transform.Find("Trees"));
+            transform.Find("Trees").GetChild(child).position = new Vector3(Random.Range(-border, -1), 4.5f, Random.Range(-border, sizeY + border));
+            transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 270, 0);
+            transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
+            child++;
+        }
+
+        for (int i = 0; i < Random.Range(5, 8); i++) {
+            if (child + 1 > transform.Find("Trees").childCount)
+                Instantiate(prefabTree, transform.Find("Trees"));
+            transform.Find("Trees").GetChild(child).position = new Vector3(Random.Range(sizeX, sizeX + border), 4.5f, Random.Range(-border + 2, sizeY + border - 2));
+            transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 90, 0);
+            transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
+            child++;
+        }
+
+        while (child + 1 < transform.Find("Trees").childCount) {
+            transform.Find("Trees").GetChild(child).gameObject.SetActive(false);
             child++;
         }
     }
