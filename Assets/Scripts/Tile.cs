@@ -43,6 +43,6 @@ public class Tile : MonoBehaviour {
 
     public void Water() {
         wet = true;
-        wetTimer = 10 + Random.Range(0.0f, 5.0f);
+        wetTimer = 13 + Random.Range(0.0f, 5.0f);
     }
 }
