@@ -10050,7 +10050,7 @@ GameObject:
   - component: {fileID: 168207780}
   - component: {fileID: 168207779}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Image - High Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10095,7 +10095,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 889233713d6ef5b4c9794f7ad11273ca, type: 3}
-  m_Type: 2
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -31991,7 +31991,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 889233713d6ef5b4c9794f7ad11273ca, type: 3}
-  m_Type: 2
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -46543,8 +46543,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'High score: 100'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 32aa59a91e3f87846838653564ee45f6, type: 2}
+  m_sharedMaterial: {fileID: -5791410294746432104, guid: 32aa59a91e3f87846838653564ee45f6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -48691,7 +48692,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &883908088
 RectTransform:
   m_ObjectHideFlags: 0
@@ -67147,7 +67148,7 @@ GameObject:
   - component: {fileID: 1242890238}
   - component: {fileID: 1242890237}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Image - Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78887,7 +78888,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1472309752
 MonoBehaviour:
   m_ObjectHideFlags: 0
