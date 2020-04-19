@@ -68,7 +68,7 @@ public class UIController : MonoBehaviour {
         }
 
         if (settingsOpen) {
-            settings.SetActive(false);
+            settings.SetActive(true);
         }
         else {
             settings.SetActive(false);
