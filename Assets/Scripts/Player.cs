@@ -50,6 +50,7 @@ public class Player : MonoBehaviour {
             lookSmooth.x = Mathf.Lerp(lookSmooth.x, lookInput.x, 1f / lookSmoothing);
             lookSmooth.y = Mathf.Lerp(lookSmooth.y, lookInput.y, 1f / lookSmoothing);
             lookIncrement += lookSmooth;
+            lookIncrement.y = Mathf.Clamp(lookIncrement.y, -80.0f, 85.0f);
             transform.GetChild(0).localRotation = Quaternion.AngleAxis(-lookIncrement.y, Vector3.right);
             transform.localRotation = Quaternion.AngleAxis(lookIncrement.x, transform.up);
 

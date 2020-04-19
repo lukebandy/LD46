@@ -91,6 +91,7 @@ public class GameController : MonoBehaviour {
 
                 if (Input.GetKeyDown("space")) {
                     gameState = GameStates.Intro;
+                    Player.main.Setup();
                 }
                 break;
 
@@ -106,7 +107,6 @@ public class GameController : MonoBehaviour {
                     seasonProgress = 0.0f;
                     farmValue = 0;
                     Plant.deaths = 0;
-                    Player.main.Setup();
                     // Setup workers
                     for (int i = 1; i < transform.Find("Workers").childCount; i++)
                         transform.Find("Workers").GetChild(i).gameObject.SetActive(false);
@@ -133,7 +133,7 @@ public class GameController : MonoBehaviour {
                 else {
                     Cursor.lockState = CursorLockMode.Locked;
 
-                    if (Plant.deaths > 10) {
+                    if (Plant.deaths >=  10) {
                         camera.gameObject.SetActive(true);
                         gameState = GameStates.Outro;
                     }
