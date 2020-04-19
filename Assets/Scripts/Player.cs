@@ -119,8 +119,8 @@ public class Player : MonoBehaviour {
 
     private void FixedUpdate() {
         rb.rotation = Quaternion.AngleAxis(lookIncrement.x, transform.up);
-        float translation = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
-        float straffe = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        float translation = Input.GetAxis("Vertical") * moveSpeed * Time.fixedDeltaTime;
+        float straffe = Input.GetAxis("Horizontal") * moveSpeed * Time.fixedDeltaTime;
         rb.MovePosition(transform.position + (translation * transform.forward) + (straffe * transform.right));
     }
 }
