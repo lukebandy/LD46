@@ -129,7 +129,7 @@ public class Worker : MonoBehaviour {
         }
 
         // Look towards camera
-        if (GameController.main.gameState == GameController.GameStates.Gameplay) {
+        if (GameController.main.gameState == GameController.GameStates.Gameplay || GameController.main.gameState == GameController.GameStates.Paused) {
             transform.GetChild(0).LookAt(Player.main.transform.position);
             transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
         }

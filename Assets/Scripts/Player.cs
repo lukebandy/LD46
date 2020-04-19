@@ -1,6 +1,4 @@
-﻿// Looking and movement adapted from https://github.com/jiankaiwang/FirstPersonController
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -118,9 +116,14 @@ public class Player : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        rb.rotation = Quaternion.AngleAxis(lookIncrement.x, transform.up);
-        float translation = Input.GetAxis("Vertical") * moveSpeed * Time.fixedDeltaTime;
-        float straffe = Input.GetAxis("Horizontal") * moveSpeed * Time.fixedDeltaTime;
-        rb.MovePosition(transform.position + (translation * transform.forward) + (straffe * transform.right));
+        if (GameController.main.gameState == GameController.GameStates.Gameplay) {
+            rb.isKinematic = true;
+            rb.rotation = Quaternion.AngleAxis(lookIncrement.x, transform.up);
+            float translation = Input.GetAxis("Vertical") * moveSpeed * Time.fixedDeltaTime;
+            float straffe = Input.GetAxis("Horizontal") * moveSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(transform.position + (translation * transform.forward) + (straffe * transform.right));
+        }
+        else
+            rb.isKinematic = false;
     }
 }
