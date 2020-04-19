@@ -34957,6 +34957,8 @@ Transform:
   - {fileID: 1667312249}
   - {fileID: 1068683733}
   - {fileID: 73814414}
+  - {fileID: 2132964699}
+  - {fileID: 640569750}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36630,7 +36632,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
   EmissionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
@@ -40467,12 +40469,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640569747}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 9.5, y: 20, z: 9.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 625828230}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!82 &640569751
 AudioSource:
@@ -106420,6 +106422,7 @@ MonoBehaviour:
   audioWater: {fileID: 1654719851}
   audioEmpty: {fileID: 1654719852}
   audioWalking: {fileID: 0}
+  rb: {fileID: 0}
   hoseRemaining: 0
   hoseCapacity: 6
 --- !u!4 &1654719849
@@ -135570,8 +135573,8 @@ Transform:
   m_LocalPosition: {x: 2.6099997, y: 56.51, z: 8.86681}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 625828230}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
 --- !u!1 &2134671129
 GameObject:
