@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4141275003079350460}
   - component: {fileID: 4141275003079350463}
   - component: {fileID: 4141275003079350462}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,8 @@ GameObject:
   - component: {fileID: 4141275004835410901}
   - component: {fileID: 4141275004835410900}
   - component: {fileID: 9050408834006323227}
-  m_Layer: 0
+  - component: {fileID: 4890158218714244225}
+  m_Layer: 10
   m_Name: Worker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +127,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabPlant: {fileID: 1735496187676943927, guid: 677d8f596690525449fc1b84118a9e38,
     type: 3}
-  audioWhew: {fileID: 9050408834006323227}
+  audioDone:
+  - {fileID: 8300000, guid: a06860d95799d2749ab596c3d6d6efa7, type: 3}
+  audioAnnoyed:
+  - {fileID: 8300000, guid: c943561a9413b9045ab21e32fcdf302b, type: 3}
+  - {fileID: 8300000, guid: f92a34d2524bb7b429bf7311706ac6b1, type: 3}
+  - {fileID: 8300000, guid: 7b59e5f93062be7499a385caf47e9c66, type: 3}
+  materialWalking: {fileID: 2100000, guid: ac54683a0b99b93489b0e63696533d7a, type: 2}
+  materialWorking: {fileID: 2100000, guid: b63df50a7467b2d46af2da1f8004db6b, type: 2}
 --- !u!82 &9050408834006323227
 AudioSource:
   m_ObjectHideFlags: 0
@@ -137,7 +145,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a06860d95799d2749ab596c3d6d6efa7, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.363
   m_Pitch: 1
@@ -223,3 +231,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &4890158218714244225
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141275004835410923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 1.5, z: 0}

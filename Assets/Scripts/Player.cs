@@ -24,7 +24,11 @@ public class Player : MonoBehaviour {
     [SerializeField]
     private AudioSource audioWater;
     [SerializeField]
+    private AudioSource audioEmpty;
+    [SerializeField]
     private AudioSource audioWalking;
+    [SerializeField]
+    private Rigidbody rb;
 
     // Public variables
     [HideInInspector]
@@ -35,6 +39,7 @@ public class Player : MonoBehaviour {
     void Start() {
         main = this;
         particleSystem = GetComponentInChildren<ParticleSystem>();
+        rb = GetComponent<Rigidbody>();
         Setup();
     }
 
@@ -54,14 +59,8 @@ public class Player : MonoBehaviour {
             lookSmooth.x = Mathf.Lerp(lookSmooth.x, lookInput.x, 1f / lookSmoothing);
             lookSmooth.y = Mathf.Lerp(lookSmooth.y, lookInput.y, 1f / lookSmoothing);
             lookIncrement += lookSmooth;
-            lookIncrement.y = Mathf.Clamp(lookIncrement.y, -80.0f, 85.0f);
+            lookIncrement.y = Mathf.Clamp(lookIncrement.y, -80.0f, 80.0f);
             transform.GetChild(0).localRotation = Quaternion.AngleAxis(-lookIncrement.y, Vector3.right);
-            transform.localRotation = Quaternion.AngleAxis(lookIncrement.x, transform.up);
-
-            // Movement
-            float translation = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
-            float straffe = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
-            transform.Translate(straffe, 0, translation);
 
             // Hose
             if (Input.GetMouseButton(0) && hoseRemaining > 0) {
@@ -69,11 +68,17 @@ public class Player : MonoBehaviour {
                 emission.enabled = true;
                 // Reduce remaining water
                 hoseRemaining -= Time.deltaTime;
+                if (hoseRemaining <= 0)
+                    audioEmpty.Play();
                 // Wake tiles wet
                 if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTile, hoseDistance, 1 << 8)) {
                     if (hitTile.transform.CompareTag("Tile")) {
                         hitTile.transform.GetComponent<Tile>().Water();
                     }
+                }
+                // Annoy workers
+                if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitWorker, hoseDistance, 1 << 10)) {
+                    hitWorker.transform.GetComponent<Worker>().Annoy();
                 }
             }
             else {
@@ -110,5 +115,12 @@ public class Player : MonoBehaviour {
                 emissionTap.enabled = false;
             }
         }
+    }
+
+    private void FixedUpdate() {
+        rb.rotation = Quaternion.AngleAxis(lookIncrement.x, transform.up);
+        float translation = Input.GetAxis("Vertical") * moveSpeed * Time.fixedDeltaTime;
+        float straffe = Input.GetAxis("Horizontal") * moveSpeed * Time.fixedDeltaTime;
+        rb.MovePosition(transform.position + (translation * transform.forward) + (straffe * transform.right));
     }
 }

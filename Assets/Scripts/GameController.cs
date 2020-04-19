@@ -40,7 +40,10 @@ public class GameController : MonoBehaviour {
     private float seasonLength;
     private Vector3 cameraPosition;
     private Quaternion cameraRotation;
-
+    [SerializeField]
+    private ParticleSystem rain;
+    private float rainTimer;
+    private float rainTimerWet;
 
     // Start is called before the first frame update
     void Start() {
@@ -101,6 +104,7 @@ public class GameController : MonoBehaviour {
                     seasonProgress = 0.0f;
                     farmValue = 0;
                     Plant.deaths = 0;
+                    rainTimer = Random.Range(5.0f, 10.0f);
                     // Setup workers
                     for (int i = 1; i < transform.Find("Workers").childCount; i++)
                         transform.Find("Workers").GetChild(i).gameObject.SetActive(false);
@@ -127,11 +131,34 @@ public class GameController : MonoBehaviour {
                 else {
                     Cursor.lockState = CursorLockMode.Locked;
 
+                    // End game
                     if (Plant.deaths >=  10) {
                         camera.gameObject.SetActive(true);
                         gameState = GameStates.Outro;
                     }
 
+                    // Rain
+                    rainTimer -= Time.deltaTime;
+                    if (rainTimer <= 0) {
+                        var emission = rain.emission;
+                        if (emission.enabled) {
+                            emission.enabled = false;
+                            rainTimer = Random.Range(5.0f, 10.0f);
+                        }
+                        else {
+                            emission.enabled = true;
+                            rainTimer = Random.Range(5.0f, 10.0f);
+                        }
+                    }
+                    if (rain.emission.enabled) {
+                        rainTimerWet -= Time.deltaTime;
+                        if (rainTimerWet <= 0) {
+                            rainTimerWet = Random.Range(0.05f, 0.25f);
+                            Tile.tiles[Random.Range(0, Tile.tiles.GetLength(0)), Random.Range(0, Tile.tiles.GetLength(1))].Water();
+                        }
+                    }
+
+                    // Progress time
                     seasonProgress += Time.deltaTime;
                     if (seasonProgress >= seasonLength) {
                         // Change season
@@ -163,7 +190,6 @@ public class GameController : MonoBehaviour {
                                 }
                                 break;
                         }
-                        //Plant.deaths = 0;
                         seasonProgress -= seasonLength;
                     }
                 }
