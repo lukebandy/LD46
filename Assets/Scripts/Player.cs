@@ -21,6 +21,10 @@ public class Player : MonoBehaviour {
     [SerializeField]
     private float hoseDistance;
     private new ParticleSystem particleSystem;
+    [SerializeField]
+    private AudioSource audioWater;
+    [SerializeField]
+    private AudioSource audioWalking;
 
     // Public variables
     [HideInInspector]
@@ -77,16 +81,23 @@ public class Player : MonoBehaviour {
                 emission.enabled = false;
             }
 
+            if (Input.GetMouseButtonDown(0) && hoseRemaining > 0)
+                audioWater.Play();
+            else if (Input.GetMouseButtonUp(0) || hoseRemaining <= 0)
+                audioWater.Stop();
+
             // Water topup
             foreach (Tap tap in FindObjectsOfType<Tap>()) {
                 var emission = tap.particleSystem.emission;
                 emission.enabled = false;
+                tap.inuse = false;
             }
             if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTap, 4.0f)) {
                 if (hitTap.transform.CompareTag("Tap")) {
                     hoseRemaining = Mathf.Clamp(hoseRemaining + (Time.deltaTime * 5.0f), 0, hoseCapacity);
                     var emission = hitTap.transform.GetComponent<Tap>().particleSystem.emission;
                     emission.enabled = true;
+                    hitTap.transform.GetComponent<Tap>().inuse = true;
                 }
             }
         }

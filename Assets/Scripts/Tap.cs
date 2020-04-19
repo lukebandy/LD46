@@ -5,10 +5,19 @@ using UnityEngine;
 public class Tap : MonoBehaviour {
 
     public new ParticleSystem particleSystem;
+    [SerializeField]
+    private AudioSource audioTap;
+    [SerializeField]
+    private AudioSource audioWater;
+    [HideInInspector]
+    public bool inuse;
+    private bool inusePrevious;
 
     // Start is called before the first frame update
     void Start() {
         particleSystem = GetComponentInChildren<ParticleSystem>();
+        inuse = false;
+        inusePrevious = false;
     }
 
     // Update is called once per frame
@@ -22,5 +31,15 @@ public class Tap : MonoBehaviour {
             transform.GetChild(0).LookAt(GameController.main.camera.transform.position);
             transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
         }
+
+        // On noise
+        if (inuse != inusePrevious && inuse) {
+            audioTap.Play();
+            audioWater.Play();
+        }
+        if (inuse != inusePrevious && !inuse) {
+            audioWater.Stop();
+        }
+        inusePrevious = inuse;
     }
 }
