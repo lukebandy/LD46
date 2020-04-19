@@ -28,10 +28,12 @@ public class Tile : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (wetTimer > 0)
-            wetTimer -= Time.deltaTime;
-        if (wetTimer <= 0)
-            wet = false;
+        if (GameController.main.gameState != GameController.GameStates.Paused) {
+            if (wetTimer > 0)
+                wetTimer -= Time.deltaTime;
+            if (wetTimer <= 0)
+                wet = false;
+        }
 
         if (wet)
             meshRenderer.material = materialWet;
