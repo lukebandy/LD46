@@ -303,40 +303,57 @@ public class GameController : MonoBehaviour {
 
         // Trees
         child = 0;
-        for (int i = 0; i < Random.Range(5, 8); i++) {
-            if (child + 1 > transform.Find("Trees").childCount)
-                Instantiate(prefabTree, transform.Find("Trees"));
-            transform.Find("Trees").GetChild(child).position = new Vector3(Random.Range(2 - border, sizeX + border - 2), 4.5f, Random.Range(-2, -border));
-            transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 180, 0);
-            transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
-            child++;
+
+        for (int y = -3; y >= -border; y -= 2) {
+            int x = 2 + Random.Range(0, 3);
+            while (x < sizeX - 3) {
+                if (child + 1 > transform.Find("Trees").childCount)
+                    Instantiate(prefabTree, transform.Find("Trees"));
+                transform.Find("Trees").GetChild(child).position = new Vector3(x, 4.5f, y);
+                transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 180, 0);
+                transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
+                child++;
+                x += Random.Range(7, 11);
+            }
         }
 
-        for (int i = 0; i < Random.Range(5, 8); i++) {
-            if (child + 1 > transform.Find("Trees").childCount)
-                Instantiate(prefabTree, transform.Find("Trees"));
-            transform.Find("Trees").GetChild(child).position = new Vector3(Random.Range(2 - border, sizeX + border - 2), 4.5f, Random.Range(sizeX, sizeX + border));
-            transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 0, 0);
-            transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
-            child++;
+        for (int y = sizeY + 2; y < sizeY + border; y += 2) {
+            int x = 2 + Random.Range(0, 3);
+            while (x < sizeX - 3) {
+                if (child + 1 > transform.Find("Trees").childCount)
+                    Instantiate(prefabTree, transform.Find("Trees"));
+                transform.Find("Trees").GetChild(child).position = new Vector3(x, 4.5f, y);
+                transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 0, 0);
+                transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
+                child++;
+                x += Random.Range(7, 11);
+            }
         }
 
-        for (int i = 0; i < Random.Range(5, 8); i++) {
-            if (child + 1 > transform.Find("Trees").childCount)
-                Instantiate(prefabTree, transform.Find("Trees"));
-            transform.Find("Trees").GetChild(child).position = new Vector3(Random.Range(-border, -1), 4.5f, Random.Range(-border, sizeY + border));
-            transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 270, 0);
-            transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
-            child++;
+        for (int x = -2; x >= -border; x -= 2) {
+            int y = 2 + Random.Range(0, 3);
+            while (y < sizeY - 3) {
+                if (child + 1 > transform.Find("Trees").childCount)
+                    Instantiate(prefabTree, transform.Find("Trees"));
+                transform.Find("Trees").GetChild(child).position = new Vector3(x, 4.5f, y);
+                transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 270, 0);
+                transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
+                child++;
+                y += Random.Range(7, 11);
+            }
         }
 
-        for (int i = 0; i < Random.Range(5, 8); i++) {
-            if (child + 1 > transform.Find("Trees").childCount)
-                Instantiate(prefabTree, transform.Find("Trees"));
-            transform.Find("Trees").GetChild(child).position = new Vector3(Random.Range(sizeX, sizeX + border), 4.5f, Random.Range(-border + 2, sizeY + border - 2));
-            transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 90, 0);
-            transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
-            child++;
+        for (int x = sizeX + 2; x <= sizeX + border; x += 2) {
+            int y = 2 + Random.Range(0, 3);
+            while (y < sizeY - 3) {
+                if (child + 1 > transform.Find("Trees").childCount)
+                    Instantiate(prefabTree, transform.Find("Trees"));
+                transform.Find("Trees").GetChild(child).position = new Vector3(x, 4.5f, y);
+                transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 90, 0);
+                transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
+                child++;
+                y += Random.Range(7, 11);
+            }
         }
 
         while (child + 1 < transform.Find("Trees").childCount) {

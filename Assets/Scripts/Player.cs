@@ -57,7 +57,6 @@ public class Player : MonoBehaviour {
             while (rotation.x <= -180.0f)
                 rotation.x += 360.0f;
             rotation.x = Mathf.Clamp(rotation.x, -75.0f, 75.0f);
-            Debug.Log(rotation.x);
             transform.GetChild(0).localRotation = Quaternion.Euler(rotation);
 
             // Hose
