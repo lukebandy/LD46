@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Plant : MonoBehaviour {
 
@@ -104,12 +102,6 @@ public class Plant : MonoBehaviour {
     public bool Pickable {
         get {
             return (!died) && timeGrowProgress >= plantData.growTime;
-        }
-    }
-
-    public int Value {
-        get {
-            return plantData.value;
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Worker : MonoBehaviour {
@@ -111,8 +110,6 @@ public class Worker : MonoBehaviour {
                         }
                         // Pick plant
                         else {
-                            if (target.plant.Pickable)
-                                GameController.main.farmValue += target.plant.Value;
                             target.plant.gameObject.SetActive(false);
                             target.plant = null;
                         }

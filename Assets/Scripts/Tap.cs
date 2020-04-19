@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Tap : MonoBehaviour {
 
@@ -23,7 +21,7 @@ public class Tap : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         // Look towards player
-        if (GameController.main.gameState == GameController.GameStates.Gameplay) {
+        if (GameController.main.gameState == GameController.GameStates.Gameplay || GameController.main.gameState == GameController.GameStates.Paused) {
             transform.GetChild(0).LookAt(Player.main.transform.position);
             transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
         }

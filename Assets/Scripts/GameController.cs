@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameController : MonoBehaviour {
 
@@ -28,8 +26,6 @@ public class GameController : MonoBehaviour {
     public Seasons season;
     [HideInInspector]
     public int year;
-    [HideInInspector]
-    public int farmValue;
     [HideInInspector]
     public GameStates gameState;
     public new Camera camera;
@@ -68,9 +64,12 @@ public class GameController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        Cursor.lockState = CursorLockMode.None;
+        if (gameState == GameStates.Gameplay || gameState == GameStates.Intro || gameState == GameStates.Outro)
+            Cursor.lockState = CursorLockMode.Locked;
+        else
+            Cursor.lockState = CursorLockMode.None;
 
-        switch(gameState) {
+        switch (gameState) {
             case GameStates.MainMenu:
                 seasonProgress += Time.deltaTime;
                 if (seasonProgress >= seasonLength) {
@@ -102,9 +101,8 @@ public class GameController : MonoBehaviour {
                     season = Seasons.Spring;
                     year = 1;
                     seasonProgress = 0.0f;
-                    farmValue = 0;
                     Plant.deaths = 0;
-                    rainTimer = Random.Range(5.0f, 10.0f);
+                    rainTimer = Random.Range(20.0f, 40.0f);
                     // Setup workers
                     for (int i = 1; i < transform.Find("Workers").childCount; i++)
                         transform.Find("Workers").GetChild(i).gameObject.SetActive(false);
@@ -129,8 +127,6 @@ public class GameController : MonoBehaviour {
                     gameState = GameStates.Paused;
 
                 else {
-                    Cursor.lockState = CursorLockMode.Locked;
-
                     // End game
                     if (Plant.deaths >=  10) {
                         camera.gameObject.SetActive(true);
@@ -143,7 +139,7 @@ public class GameController : MonoBehaviour {
                         var emission = rain.emission;
                         if (emission.enabled) {
                             emission.enabled = false;
-                            rainTimer = Random.Range(5.0f, 10.0f);
+                            rainTimer = Random.Range(20.0f, 40.0f);
                         }
                         else {
                             emission.enabled = true;

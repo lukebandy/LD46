@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
@@ -16,9 +14,17 @@ public class UIController : MonoBehaviour {
     [SerializeField]
     private GameObject hud;
     [SerializeField]
-    private TextMeshProUGUI hudBalance;
+    private Image hudSeason;
     [SerializeField]
-    private TextMeshProUGUI hudSeason;
+    private Sprite hudSeasonAutumn;
+    [SerializeField]
+    private Sprite hudSeasonSpring;
+    [SerializeField]
+    private Sprite hudSeasonSummer;
+    [SerializeField]
+    private Sprite hudSeasonWinter;
+    [SerializeField]
+    private TextMeshProUGUI hudSeasonYear;
     [SerializeField]
     private Transform hudLives;
     [SerializeField]
@@ -61,8 +67,21 @@ public class UIController : MonoBehaviour {
 
         if (GameController.main.gameState == GameController.GameStates.Gameplay) {
             hud.SetActive(true);
-            hudBalance.text = "£" + GameController.main.farmValue.ToString();
-            hudSeason.text = GameController.main.season.ToString() + " - Year " + GameController.main.year.ToString();
+            switch (GameController.main.season) {
+                case GameController.Seasons.Spring:
+                    hudSeason.sprite = hudSeasonSpring;
+                    break;
+                case GameController.Seasons.Autumn:
+                    hudSeason.sprite = hudSeasonAutumn;
+                    break;
+                case GameController.Seasons.Summer:
+                    hudSeason.sprite = hudSeasonSummer;
+                    break;
+                case GameController.Seasons.Winter:
+                    hudSeason.sprite = hudSeasonWinter;
+                    break;
+            }
+            hudSeasonYear.text = " Year " + GameController.main.year.ToString();
             for (int i = 0; i < 10; i++) {
                 if (Plant.deaths <= i)
                     hudLives.GetChild(9 - i).GetComponent<Image>().sprite = hudLivesPlant;

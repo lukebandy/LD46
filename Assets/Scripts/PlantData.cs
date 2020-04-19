@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Plant", menuName = "Plant")]
 public class PlantData : ScriptableObject {
@@ -16,7 +14,4 @@ public class PlantData : ScriptableObject {
     public GameController.Seasons season;
     public float growTime;
     public float dryTime;
-
-    // Other
-    public int value;
 }

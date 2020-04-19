@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour {
 
@@ -51,14 +49,16 @@ public class Player : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (GameController.main.gameState == GameController.GameStates.Gameplay) {
-            // Looking
-            Vector2 lookInput = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
-            lookInput = Vector2.Scale(lookInput, new Vector2(lookSensitivity * lookSmoothing, lookSensitivity * lookSmoothing));
-            lookSmooth.x = Mathf.Lerp(lookSmooth.x, lookInput.x, 1f / lookSmoothing);
-            lookSmooth.y = Mathf.Lerp(lookSmooth.y, lookInput.y, 1f / lookSmoothing);
-            lookIncrement += lookSmooth;
-            lookIncrement.y = Mathf.Clamp(lookIncrement.y, -80.0f, 80.0f);
-            transform.GetChild(0).localRotation = Quaternion.AngleAxis(-lookIncrement.y, Vector3.right);
+            // Vertical looking
+            Vector3 rotation = transform.GetChild(0).localRotation.eulerAngles;
+            rotation -= Vector3.right * Input.GetAxis("Mouse Y") * lookSensitivity * Time.deltaTime;
+            while (rotation.x >= 180.0f)
+                rotation.x -= 360.0f;
+            while (rotation.x <= -180.0f)
+                rotation.x += 360.0f;
+            rotation.x = Mathf.Clamp(rotation.x, -75.0f, 75.0f);
+            Debug.Log(rotation.x);
+            transform.GetChild(0).localRotation = Quaternion.Euler(rotation);
 
             // Hose
             if (Input.GetMouseButton(0) && hoseRemaining > 0) {
@@ -111,19 +111,25 @@ public class Player : MonoBehaviour {
             foreach (Tap tap in FindObjectsOfType<Tap>()) {
                 var emissionTap = tap.particleSystem.emission;
                 emissionTap.enabled = false;
+                tap.inuse = false;
             }
+
+            audioWater.Stop();
         }
     }
 
     private void FixedUpdate() {
         if (GameController.main.gameState == GameController.GameStates.Gameplay) {
-            rb.isKinematic = true;
-            rb.rotation = Quaternion.AngleAxis(lookIncrement.x, transform.up);
-            float translation = Input.GetAxis("Vertical") * moveSpeed * Time.fixedDeltaTime;
-            float straffe = Input.GetAxis("Horizontal") * moveSpeed * Time.fixedDeltaTime;
+            rb.isKinematic = false;
+            // Horizontal looking
+            float angle = Input.GetAxis("Mouse X") * Time.deltaTime * lookSensitivity;
+            rb.MoveRotation(Quaternion.Euler(rb.rotation.eulerAngles + (transform.up * angle)));
+            // Movement
+            float translation = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+            float straffe = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
             rb.MovePosition(transform.position + (translation * transform.forward) + (straffe * transform.right));
         }
         else
-            rb.isKinematic = false;
+            rb.isKinematic = true;
     }
 }
