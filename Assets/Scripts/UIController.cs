@@ -143,6 +143,9 @@ public class UIController : MonoBehaviour {
         GameController.main.camera.transform.rotation = Player.main.transform.GetChild(0).transform.rotation;
         GameController.main.camera.gameObject.SetActive(true);
         GameController.main.gameState = GameController.GameStates.Outro;
+        GameController.main.highScore = Mathf.Max(GameController.main.highScore, GameController.main.year - 1);
+        if (Application.platform != RuntimePlatform.WebGLPlayer)
+            PlayerPrefs.SetInt("High Score", GameController.main.highScore);
     }
 
     public void Quit() {

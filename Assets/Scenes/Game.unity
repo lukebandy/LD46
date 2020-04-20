@@ -1528,8 +1528,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -4.550001}
+  m_SizeDelta: {x: 0, y: -9.099998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &33154356
 MonoBehaviour:
@@ -1578,8 +1578,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 52.1
+  m_fontSizeBase: 52.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2149,7 +2149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &35911655
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10213,8 +10213,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -243}
-  m_SizeDelta: {x: 700, y: 150}
+  m_AnchoredPosition: {x: 0, y: -288}
+  m_SizeDelta: {x: 509.1, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &168207779
 MonoBehaviour:
@@ -11348,7 +11348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &197088217
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17016,7 +17016,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -149}
+  m_AnchoredPosition: {x: 0, y: -61.000004}
   m_SizeDelta: {x: 384, y: 96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &311875111
@@ -19308,8 +19308,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -4.550001}
+  m_SizeDelta: {x: 0, y: -9.099998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &344582989
 MonoBehaviour:
@@ -19358,8 +19358,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 52.1
+  m_fontSizeBase: 52.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -32083,7 +32083,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -75}
   m_SizeDelta: {x: 512, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &577315812
@@ -35374,6 +35374,7 @@ GameObject:
   - component: {fileID: 625828229}
   - component: {fileID: 625828231}
   - component: {fileID: 625828232}
+  - component: {fileID: 625828233}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -35413,6 +35414,7 @@ MonoBehaviour:
   seasonLength: 20
   rain: {fileID: 640569749}
   audioRain: {fileID: 625828232}
+  audioFired: {fileID: 625828233}
 --- !u!4 &625828230
 Transform:
   m_ObjectHideFlags: 0
@@ -35551,6 +35553,103 @@ AudioSource:
   m_Volume: 0.277
   m_Pitch: 0.29
   Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &625828233
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625828228}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -2913182604457551154, guid: a3fe94cbbad216b4cbf677b92a4c0377,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 7e27e58f983f02c4196b3dc19b210838, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.59
+  m_Pitch: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -45563,7 +45662,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 591.9, y: 878}
+  m_SizeDelta: {x: 591.9, y: 804.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &727892399
 MonoBehaviour:
@@ -52390,7 +52489,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -17.949997}
+  m_AnchoredPosition: {x: 0, y: -33}
   m_SizeDelta: {x: 0, y: -35.90001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &833501857
@@ -52411,7 +52510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'High score: 100'
+  m_text: 'High score: 22 Years'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b01f6b20688d92b4cb6f71d8b7dd87eb, type: 2}
   m_sharedMaterial: {fileID: -2569584107572423670, guid: b01f6b20688d92b4cb6f71d8b7dd87eb,
@@ -52440,8 +52539,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 43.26
-  m_fontSizeBase: 43.26
+  m_fontSize: 38.5
+  m_fontSizeBase: 38.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -52481,10 +52580,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 833501857}
-    characterCount: 15
+    characterCount: 20
     spriteCount: 0
-    spaceCount: 2
-    wordCount: 3
+    spaceCount: 3
+    wordCount: 4
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -52546,8 +52645,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -4.550001}
+  m_SizeDelta: {x: 0, y: -9.099998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &833767141
 MonoBehaviour:
@@ -52596,8 +52695,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 52.1
+  m_fontSizeBase: 52.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -66177,7 +66276,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -296}
+  m_AnchoredPosition: {x: 0, y: -208}
   m_SizeDelta: {x: 384, y: 96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1082547869
@@ -73928,7 +74027,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -100}
+  m_AnchoredPosition: {x: 0, y: -176}
   m_SizeDelta: {x: 999.5, y: 192}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1242890237
@@ -74715,7 +74814,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -300}
+  m_AnchoredPosition: {x: 0, y: -225}
   m_SizeDelta: {x: 512, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1254021021
@@ -77865,8 +77964,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Use WASD to move, the mouse to aim and the left mouse button to fire your
     hose\n\nKeep all of the plants hydrated to stop them from dying out; if too many
-    die, you\u2019ll be fired from your job!\r\n\nIf you run out of water, go and
-    get a top up from a tap\r"
+    die you\u2019ll be fired from your job!\r\n\nIf you run out of water go and get
+    a top up from a tap\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b01f6b20688d92b4cb6f71d8b7dd87eb, type: 2}
   m_sharedMaterial: {fileID: -2569584107572423670, guid: b01f6b20688d92b4cb6f71d8b7dd87eb,
@@ -77895,8 +77994,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 12.76
-  m_fontSizeBase: 12.76
+  m_fontSize: 15.9
+  m_fontSizeBase: 15.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -77936,7 +78035,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1314853047}
-    characterCount: 247
+    characterCount: 245
     spriteCount: 0
     spaceCount: 55
     wordCount: 54
@@ -83845,7 +83944,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -50, y: 0}
-  m_SizeDelta: {x: 200, y: 300}
+  m_SizeDelta: {x: 233.6, y: 351.5}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1437081731
 MonoBehaviour:
@@ -88314,7 +88413,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -50, y: -50}
-  m_SizeDelta: {x: 416, y: 128}
+  m_SizeDelta: {x: 324.71, y: 128}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1510846093
 MonoBehaviour:
@@ -100557,7 +100656,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  lookSensitivity: 40
+  lookSensitivityDesktop: 50
+  lookSensitivityWeb: 20
   hoseDistance: 6
   audioWater: {fileID: 1654719851}
   audioEmpty: {fileID: 1654719852}
@@ -113143,7 +113243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 139}
+  m_AnchoredPosition: {x: 0, y: 80}
   m_SizeDelta: {x: 384, y: 96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1893567286
@@ -122022,8 +122122,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -19.2}
+  m_SizeDelta: {x: 0, y: -19.200027}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2063927520
 MonoBehaviour:
@@ -122072,8 +122172,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 59
-  m_fontSizeBase: 59
+  m_fontSize: 69.88
+  m_fontSizeBase: 69.88
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
