@@ -89,7 +89,7 @@ public class Player : MonoBehaviour {
                 audioWater.Stop();
 
             // Water topup
-            foreach (Tap tap in FindObjectsOfType<Tap>()) {
+            foreach (Tap tap in Tap.taps) {
                 var emission = tap.particleSystem.emission;
                 emission.enabled = false;
                 tap.inuse = false;
@@ -107,7 +107,7 @@ public class Player : MonoBehaviour {
             var emission = particleSystem.emission;
             emission.enabled = false;
 
-            foreach (Tap tap in FindObjectsOfType<Tap>()) {
+            foreach (Tap tap in Tap.taps) {
                 var emissionTap = tap.particleSystem.emission;
                 emissionTap.enabled = false;
                 tap.inuse = false;

@@ -47,7 +47,6 @@ public class Plant : MonoBehaviour {
         if (GameController.main.gameState == GameController.GameStates.Gameplay) {
             // Current state
             if (!died) {
-                //if (plantData.season == GameController.main.season) {
                 if (tile.wet && timeDryProgress < plantData.dryTime)
                     timeDryProgress = 0.0f;
                 else
@@ -61,12 +60,6 @@ public class Plant : MonoBehaviour {
                         died = true;
                     }
                 }
-                //}
-                //else {
-                //    Debug.Log("Died - season");
-                //    deaths++;
-                //    died = true;
-                //}
             }
             else {
                 timeDeadProgress += Time.deltaTime;

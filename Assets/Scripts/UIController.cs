@@ -12,6 +12,10 @@ public class UIController : MonoBehaviour {
     private GameObject mainQuit;
 
     [SerializeField]
+    private GameObject tutorial;
+    private float tutorialRemaining;
+
+    [SerializeField]
     private GameObject hud;
     [SerializeField]
     private Image hudSeason;
@@ -65,6 +69,12 @@ public class UIController : MonoBehaviour {
         else
             main.SetActive(false);
 
+        if (GameController.main.gameState == GameController.GameStates.Intro) {
+            tutorial.SetActive(true);
+        }
+        else
+            tutorial.SetActive(false);
+
         if (GameController.main.gameState == GameController.GameStates.Gameplay) {
             hud.SetActive(true);
             switch (GameController.main.season) {
@@ -116,6 +126,7 @@ public class UIController : MonoBehaviour {
 
     public void Play() {
         GameController.main.gameState = GameController.GameStates.Intro;
+        Player.main.Setup();
     }
 
     public void Resume() {
