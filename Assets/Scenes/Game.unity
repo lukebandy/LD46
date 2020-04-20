@@ -45224,7 +45224,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.06759523, g: 0.22107758, b: 0.46226418, a: 0}
+  m_BackGroundColor: {r: 0.4509804, g: 0.7019608, b: 0.81960785, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -57727,7 +57727,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.06666667, g: 0.21960784, b: 0.4627451, a: 0}
+  m_BackGroundColor: {r: 0.4509804, g: 0.7019608, b: 0.81960785, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -97738,7 +97738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1667312249
 Transform:
   m_ObjectHideFlags: 0
@@ -120942,7 +120942,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5425fd4b5748614484f8ca325c9e481, type: 2}
+  - {fileID: 2100000, guid: 353fd93cc20886d4482690c46b6449e4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
