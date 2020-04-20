@@ -36,26 +36,44 @@ public class GameController : MonoBehaviour {
     private float seasonLength;
     private Vector3 cameraPosition;
     private Quaternion cameraRotation;
+    private float cameraElapsed;
     [SerializeField]
     private ParticleSystem rain;
     private float rainTimer;
     private float rainTimerWet;
 
+    private Transform folderTiles;
+    private Transform folderFences;
+    private Transform folderWorkers;
+    private Transform folderPlants;
+    private Transform folderTaps;
+    private Transform folderGrass;
+    private Transform folderTrees;
+
     // Start is called before the first frame update
     void Start() {
         main = this;
-        GenerateMap();
 
         Object[] objs = Resources.LoadAll("Plants", typeof(PlantData));
         Plant.plantDataAll = new PlantData[objs.Length];
         for (int i = 0; i < objs.Length; i++)
             Plant.plantDataAll[i] = (PlantData)objs[i];
 
+        folderTiles = transform.Find("Tiles");
+        folderFences = transform.Find("Fences");
+        folderWorkers = transform.Find("Workers");
+        folderPlants = transform.Find("Plants");
+        folderTaps = transform.Find("Taps");
+        folderGrass = transform.Find("Grass");
+        folderTrees = transform.Find("Trees");
+
         camera.gameObject.SetActive(true);
         cameraPosition = camera.transform.position;
         cameraRotation = camera.transform.rotation;
 
         gameState = GameStates.MainMenu;
+
+        GenerateMap();
 
         // Spawn workers
         for (int i = 0; i < 3; i++)
@@ -93,8 +111,9 @@ public class GameController : MonoBehaviour {
 
             case GameStates.Intro:
                 // Move camera
-                camera.transform.position = Vector3.MoveTowards(camera.transform.position, Player.main.transform.GetChild(0).position, Time.deltaTime * 10.0f);
-                camera.transform.rotation = Quaternion.RotateTowards(camera.transform.rotation, Player.main.transform.GetChild(0).rotation, Time.deltaTime * 10.0f);
+                cameraElapsed += Time.deltaTime;
+                camera.transform.position = Vector3.Slerp(cameraPosition, Player.main.transform.GetChild(0).position, cameraElapsed/7.0f);
+                camera.transform.rotation = Quaternion.Slerp(cameraRotation, Player.main.transform.GetChild(0).rotation, cameraElapsed / 7.0f);
 
                 if (camera.transform.position == Player.main.transform.GetChild(0).position && camera.transform.rotation == Player.main.transform.GetChild(0).rotation) {
                     // Setup game
@@ -103,12 +122,13 @@ public class GameController : MonoBehaviour {
                     seasonProgress = 0.0f;
                     Plant.deaths = 0;
                     rainTimer = Random.Range(20.0f, 40.0f);
+                    cameraElapsed = 0.0f;
                     // Setup workers
-                    for (int i = 1; i < transform.Find("Workers").childCount; i++)
-                        transform.Find("Workers").GetChild(i).gameObject.SetActive(false);
-                    transform.Find("Workers").GetChild(0).GetComponent<Worker>().Setup();
+                    for (int i = 1; i < folderWorkers.childCount; i++)
+                        folderWorkers.GetChild(i).gameObject.SetActive(false);
+                    folderWorkers.GetChild(0).GetComponent<Worker>().Setup();
                     // Reset map
-                    foreach (Transform plant in transform.Find("Plants"))
+                    foreach (Transform plant in folderPlants)
                         plant.gameObject.SetActive(false);
                     for (int x = 0; x < Tile.tiles.GetLength(0); x++) {
                         for (int y = 0; y < Tile.tiles.GetLength(1); y++) {
@@ -173,7 +193,7 @@ public class GameController : MonoBehaviour {
                                 year++;
                                 // Spawn another worker
                                 bool spawned = false;
-                                foreach (Transform worker in transform.Find("Workers")) {
+                                foreach (Transform worker in folderWorkers) {
                                     if (!worker.gameObject.activeSelf) {
                                         worker.gameObject.SetActive(true);
                                         worker.GetComponent<Worker>().Setup();
@@ -198,11 +218,17 @@ public class GameController : MonoBehaviour {
 
             case GameStates.Outro:
                 // Move camera
-                camera.transform.position = Vector3.MoveTowards(camera.transform.position, cameraPosition, Time.deltaTime * 10.0f);
-                camera.transform.rotation = Quaternion.RotateTowards(camera.transform.rotation, cameraRotation, Time.deltaTime * 10.0f);
+                cameraElapsed += Time.deltaTime;
+                camera.transform.position = Vector3.Slerp(Player.main.transform.GetChild(0).position, cameraPosition, cameraElapsed / 7.0f);
+                camera.transform.rotation = Quaternion.Slerp(Player.main.transform.GetChild(0).rotation, cameraRotation, cameraElapsed / 7.0f);
 
                 if (camera.transform.position == cameraPosition && camera.transform.rotation == cameraRotation) {
+                    Debug.Log("Finished");
+                    cameraElapsed = 0.0f;
                     gameState = GameStates.MainMenu;
+                }
+                else {
+                    Debug.Log("Not finished");
                 }
                 break;
         }
@@ -214,72 +240,74 @@ public class GameController : MonoBehaviour {
         Tile.tiles = new Tile[sizeX, sizeY];
         for (int x = 0; x < sizeX; x++) {
             for (int y = 0; y < sizeY; y++) {
-                if (child + 1 > transform.Find("Tiles").childCount)
-                    Instantiate(prefabTile, transform.Find("Tiles"));
-                transform.Find("Tiles").GetChild(child).position = new Vector3(x, 0, y);
-                transform.Find("Tiles").GetChild(child).gameObject.SetActive(true);
-                Tile.tiles[x, y] = transform.Find("Tiles").GetChild(child).GetComponent<Tile>();
+                if (child + 1 > folderTiles.childCount)
+                    Instantiate(prefabTile, folderTiles);
+                folderTiles.GetChild(child).position = new Vector3(x, 0, y);
+                folderTiles.GetChild(child).gameObject.SetActive(true);
+                Tile.tiles[x, y] = folderTiles.GetChild(child).GetComponent<Tile>();
                 child++;
             }
         }
-        while (child + 1 < transform.Find("Tiles").childCount) {
-            transform.Find("Tiles").GetChild(child).gameObject.SetActive(false);
+        while (child + 1 < folderTiles.childCount) {
+            folderTiles.GetChild(child).gameObject.SetActive(false);
             child++;
         }
 
         // Fences
         child = 0;
         for (int x = 0; x < sizeX; x++) {
-            if (child + 1 > transform.Find("Fences").childCount)
-                Instantiate(prefabFences, transform.Find("Fences"));
-            transform.Find("Fences").GetChild(child).position = new Vector3(x, 0, -1);
-            transform.Find("Fences").GetChild(child).rotation = Quaternion.identity;
-            transform.Find("Fences").GetChild(child).gameObject.SetActive(true);
+            if (child + 1 > folderFences.childCount)
+                Instantiate(prefabFences, folderFences);
+            folderFences.GetChild(child).position = new Vector3(x, 0, -1);
+            folderFences.GetChild(child).rotation = Quaternion.identity;
+            folderFences.GetChild(child).gameObject.SetActive(true);
             child++;
 
-            if (child + 1 > transform.Find("Fences").childCount)
-                Instantiate(prefabFences, transform.Find("Fences"));
-            transform.Find("Fences").GetChild(child).position = new Vector3(x, 0, sizeY);
-            transform.Find("Fences").GetChild(child).rotation = Quaternion.Euler(0, 180, 0);
-            transform.Find("Fences").GetChild(child).gameObject.SetActive(true);
+            if (child + 1 > folderFences.childCount)
+                Instantiate(prefabFences, folderFences);
+            folderFences.GetChild(child).position = new Vector3(x, 0, sizeY);
+            folderFences.GetChild(child).rotation = Quaternion.Euler(0, 180, 0);
+            folderFences.GetChild(child).gameObject.SetActive(true);
             child++;
         }
         for (int y = 0; y < sizeY; y++) {
-            if (child + 1 > transform.Find("Fences").childCount)
-                Instantiate(prefabFences, transform.Find("Fences"));
-            transform.Find("Fences").GetChild(child).position = new Vector3(-1, 0, y);
-            transform.Find("Fences").GetChild(child).rotation = Quaternion.Euler(0, 90, 0);
-            transform.Find("Fences").GetChild(child).gameObject.SetActive(true);
+            if (child + 1 > folderFences.childCount)
+                Instantiate(prefabFences, folderFences);
+            folderFences.GetChild(child).position = new Vector3(-1, 0, y);
+            folderFences.GetChild(child).rotation = Quaternion.Euler(0, 90, 0);
+            folderFences.GetChild(child).gameObject.SetActive(true);
             child++;
 
-            if (child + 1 > transform.Find("Fences").childCount)
-                Instantiate(prefabFences, transform.Find("Fences"));
-            transform.Find("Fences").GetChild(child).position = new Vector3(sizeX, 0, y);
-            transform.Find("Fences").GetChild(child).rotation = Quaternion.Euler(0, 270, 0);
-            transform.Find("Fences").GetChild(child).gameObject.SetActive(true);
+            if (child + 1 > folderFences.childCount)
+                Instantiate(prefabFences, folderFences);
+            folderFences.GetChild(child).position = new Vector3(sizeX, 0, y);
+            folderFences.GetChild(child).rotation = Quaternion.Euler(0, 270, 0);
+            folderFences.GetChild(child).gameObject.SetActive(true);
             child++;
         }
-        while (child + 1 < transform.Find("Fences").childCount) {
-            transform.Find("Fences").GetChild(child).gameObject.SetActive(false);
+        while (child + 1 < folderFences.childCount) {
+            folderFences.GetChild(child).gameObject.SetActive(false);
             child++;
         }
 
         // Taps
         child = 0;
         int tapsPlaced = 0;
+        Tap.taps = new Tap[taps];
         while (tapsPlaced < taps) {
             Tile tile = Tile.tiles[Random.Range(0, Tile.tiles.GetLength(0)), Random.Range(0, Tile.tiles.GetLength(1))];
             if (!tile.tap) {
                 tile.tap = true;
-                if (child + 1 > transform.Find("Taps").childCount)
-                    Instantiate(prefabTap, transform.Find("Taps"));
-                transform.Find("Taps").GetChild(child).position = tile.transform.position;
+                if (child + 1 > folderTaps.childCount)
+                    Instantiate(prefabTap, folderTaps);
+                folderTaps.GetChild(child).position = tile.transform.position;
+                Tap.taps[child] = folderTaps.GetChild(child).GetComponent<Tap>();
                 tapsPlaced++;
                 child++;
             }
         }
-        while (child + 1 < transform.Find("Taps").childCount) {
-            transform.Find("Taps").GetChild(child).gameObject.SetActive(false);
+        while (child + 1 < folderTaps.childCount) {
+            folderTaps.GetChild(child).gameObject.SetActive(false);
             child++;
         }
 
@@ -288,59 +316,76 @@ public class GameController : MonoBehaviour {
         for (int x = -border; x < sizeX + border; x++) {
             for (int y = -border; y < sizeY + border; y++) {
                 if (x < 0 || x >= sizeX || y < 0 || y >= sizeY) {
-                    if (child + 1 > transform.Find("Grass").childCount)
-                        Instantiate(prefabGrass, transform.Find("Grass"));
-                    transform.Find("Grass").GetChild(child).position = new Vector3(x, 0, y);
-                    transform.Find("Grass").GetChild(child).gameObject.SetActive(true);
+                    if (child + 1 > folderGrass.childCount)
+                        Instantiate(prefabGrass, folderGrass);
+                    folderGrass.GetChild(child).position = new Vector3(x, 0, y);
+                    folderGrass.GetChild(child).gameObject.SetActive(true);
                     child++;
                 }
             }
         }
-        while (child + 1 < transform.Find("Grass").childCount) {
-            transform.Find("Grass").GetChild(child).gameObject.SetActive(false);
+        while (child + 1 < folderGrass.childCount) {
+            folderGrass.GetChild(child).gameObject.SetActive(false);
             child++;
         }
 
         // Trees
         child = 0;
-        for (int i = 0; i < Random.Range(5, 8); i++) {
-            if (child + 1 > transform.Find("Trees").childCount)
-                Instantiate(prefabTree, transform.Find("Trees"));
-            transform.Find("Trees").GetChild(child).position = new Vector3(Random.Range(2 - border, sizeX + border - 2), 4.5f, Random.Range(-2, -border));
-            transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 180, 0);
-            transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
-            child++;
+
+        for (int y = -3; y >= -border; y -= 2) {
+            int x = 2 + Random.Range(0, 3);
+            while (x < sizeX - 3) {
+                if (child + 1 > folderTrees.childCount)
+                    Instantiate(prefabTree, folderTrees);
+                folderTrees.GetChild(child).position = new Vector3(x, 4.5f, y);
+                folderTrees.GetChild(child).rotation = Quaternion.Euler(0, 180, 0);
+                folderTrees.GetChild(child).gameObject.SetActive(true);
+                child++;
+                x += Random.Range(7, 11);
+            }
         }
 
-        for (int i = 0; i < Random.Range(5, 8); i++) {
-            if (child + 1 > transform.Find("Trees").childCount)
-                Instantiate(prefabTree, transform.Find("Trees"));
-            transform.Find("Trees").GetChild(child).position = new Vector3(Random.Range(2 - border, sizeX + border - 2), 4.5f, Random.Range(sizeX, sizeX + border));
-            transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 0, 0);
-            transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
-            child++;
+        for (int y = sizeY + 2; y < sizeY + border; y += 2) {
+            int x = 2 + Random.Range(0, 3);
+            while (x < sizeX - 3) {
+                if (child + 1 > folderTrees.childCount)
+                    Instantiate(prefabTree, folderTrees);
+                folderTrees.GetChild(child).position = new Vector3(x, 4.5f, y);
+                folderTrees.GetChild(child).rotation = Quaternion.Euler(0, 0, 0);
+                folderTrees.GetChild(child).gameObject.SetActive(true);
+                child++;
+                x += Random.Range(7, 11);
+            }
         }
 
-        for (int i = 0; i < Random.Range(5, 8); i++) {
-            if (child + 1 > transform.Find("Trees").childCount)
-                Instantiate(prefabTree, transform.Find("Trees"));
-            transform.Find("Trees").GetChild(child).position = new Vector3(Random.Range(-border, -1), 4.5f, Random.Range(-border, sizeY + border));
-            transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 270, 0);
-            transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
-            child++;
+        for (int x = -2; x >= -border; x -= 2) {
+            int y = 2 + Random.Range(0, 3);
+            while (y < sizeY - 3) {
+                if (child + 1 > folderTrees.childCount)
+                    Instantiate(prefabTree, folderTrees);
+                folderTrees.GetChild(child).position = new Vector3(x, 4.5f, y);
+                folderTrees.GetChild(child).rotation = Quaternion.Euler(0, 270, 0);
+                folderTrees.GetChild(child).gameObject.SetActive(true);
+                child++;
+                y += Random.Range(7, 11);
+            }
         }
 
-        for (int i = 0; i < Random.Range(5, 8); i++) {
-            if (child + 1 > transform.Find("Trees").childCount)
-                Instantiate(prefabTree, transform.Find("Trees"));
-            transform.Find("Trees").GetChild(child).position = new Vector3(Random.Range(sizeX, sizeX + border), 4.5f, Random.Range(-border + 2, sizeY + border - 2));
-            transform.Find("Trees").GetChild(child).rotation = Quaternion.Euler(0, 90, 0);
-            transform.Find("Trees").GetChild(child).gameObject.SetActive(true);
-            child++;
+        for (int x = sizeX + 2; x <= sizeX + border; x += 2) {
+            int y = 2 + Random.Range(0, 3);
+            while (y < sizeY - 3) {
+                if (child + 1 > folderTrees.childCount)
+                    Instantiate(prefabTree, folderTrees);
+                folderTrees.GetChild(child).position = new Vector3(x, 4.5f, y);
+                folderTrees.GetChild(child).rotation = Quaternion.Euler(0, 90, 0);
+                folderTrees.GetChild(child).gameObject.SetActive(true);
+                child++;
+                y += Random.Range(7, 11);
+            }
         }
 
-        while (child + 1 < transform.Find("Trees").childCount) {
-            transform.Find("Trees").GetChild(child).gameObject.SetActive(false);
+        while (child + 1 < folderTrees.childCount) {
+            folderTrees.GetChild(child).gameObject.SetActive(false);
             child++;
         }
     }

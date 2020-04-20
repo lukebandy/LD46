@@ -57,7 +57,6 @@ public class Player : MonoBehaviour {
             while (rotation.x <= -180.0f)
                 rotation.x += 360.0f;
             rotation.x = Mathf.Clamp(rotation.x, -75.0f, 75.0f);
-            Debug.Log(rotation.x);
             transform.GetChild(0).localRotation = Quaternion.Euler(rotation);
 
             // Hose
@@ -90,7 +89,7 @@ public class Player : MonoBehaviour {
                 audioWater.Stop();
 
             // Water topup
-            foreach (Tap tap in FindObjectsOfType<Tap>()) {
+            foreach (Tap tap in Tap.taps) {
                 var emission = tap.particleSystem.emission;
                 emission.enabled = false;
                 tap.inuse = false;
@@ -108,7 +107,7 @@ public class Player : MonoBehaviour {
             var emission = particleSystem.emission;
             emission.enabled = false;
 
-            foreach (Tap tap in FindObjectsOfType<Tap>()) {
+            foreach (Tap tap in Tap.taps) {
                 var emissionTap = tap.particleSystem.emission;
                 emissionTap.enabled = false;
                 tap.inuse = false;

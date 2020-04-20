@@ -2,6 +2,8 @@
 
 public class Tap : MonoBehaviour {
 
+    public static Tap[] taps;
+
     public new ParticleSystem particleSystem;
     [SerializeField]
     private AudioSource audioTap;
