@@ -88,8 +88,8 @@ public class Worker : MonoBehaviour {
                             // Get plants suitable for this season
                             List<PlantData> plants = new List<PlantData>();
                             foreach (PlantData plant in Plant.plantDataAll) {
-                                //if (plant.season == GameController.main.season)
-                                plants.Add(plant);
+                                if (plant.season == GameController.main.season || GameController.main.gameState != GameController.GameStates.Gameplay)
+                                    plants.Add(plant);
                             }
 
                             if (plants.Count > 0) {

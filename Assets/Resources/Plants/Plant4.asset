@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eac35cab0068b034389ebf5e74779533, type: 3}
+  m_Name: Plant4
+  m_EditorClassIdentifier: 
+  materialSproutAlive: {fileID: 2100000, guid: e8bd847af1e0f344d9cbe82bb8dc2900, type: 2}
+  materialSproutDead: {fileID: 2100000, guid: 4570da3170084d544bfd1344581355af, type: 2}
+  materialGrowingAlive: {fileID: 2100000, guid: 3b36f8dceb35e404ca046168484bf55b,
+    type: 2}
+  materialGrowingDead: {fileID: 2100000, guid: 00fcef6f242ed2b47a9f057db8164820, type: 2}
+  materialGrownAlive: {fileID: 2100000, guid: 205c36eb719bcc14fb586dedb4d897a7, type: 2}
+  materialGrownDead: {fileID: 2100000, guid: ab1c1829bf12b424fb3b930917adc42a, type: 2}
+  season: 2
+  growTime: 20
+  dryTime: 10
