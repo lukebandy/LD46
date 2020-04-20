@@ -9,6 +9,9 @@ public class Player : MonoBehaviour {
     [SerializeField]
     private float moveSpeed;
     [SerializeField]
+    private float lookSensitivityDesktop;
+    [SerializeField]
+    private float lookSensitivityWeb;
     private float lookSensitivity;
     private Vector2 lookIncrement;
     [SerializeField]
@@ -34,6 +37,12 @@ public class Player : MonoBehaviour {
         main = this;
         particleSystem = GetComponentInChildren<ParticleSystem>();
         rb = GetComponent<Rigidbody>();
+
+        if (Application.platform == RuntimePlatform.WebGLPlayer)
+            lookSensitivity = lookSensitivityWeb;
+        else
+            lookSensitivity = lookSensitivityDesktop;
+
         Setup();
     }
 

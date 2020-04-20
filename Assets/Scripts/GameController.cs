@@ -43,6 +43,8 @@ public class GameController : MonoBehaviour {
     private float rainTimerWet;
     [SerializeField]
     private AudioSource audioRain;
+    [SerializeField]
+    private AudioSource audioFired;
 
     private Transform folderTiles;
     private Transform folderFences;
@@ -75,6 +77,11 @@ public class GameController : MonoBehaviour {
 
         gameState = GameStates.MainMenu;
 
+        if (PlayerPrefs.HasKey("High Score"))
+            highScore = PlayerPrefs.GetInt("High Score");
+        else
+            highScore = 0;
+
         GenerateMap();
 
         // Spawn workers
@@ -85,10 +92,14 @@ public class GameController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         // Cursor
-        if (gameState == GameStates.Gameplay || gameState == GameStates.Intro || gameState == GameStates.Outro)
+        if (gameState == GameStates.Gameplay || gameState == GameStates.Intro || gameState == GameStates.Outro) {
             Cursor.lockState = CursorLockMode.Locked;
-        else
+            Cursor.visible = false;
+        }
+        else {
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
 
         // Core stuff
         switch (gameState) {
@@ -155,6 +166,9 @@ public class GameController : MonoBehaviour {
                         camera.gameObject.SetActive(true);
                         gameState = GameStates.Outro;
                         highScore = Mathf.Max(highScore, year - 1);
+                        if (Application.platform != RuntimePlatform.WebGLPlayer)
+                            PlayerPrefs.SetInt("High Score", GameController.main.highScore);
+                        audioFired.Play();
                     }
 
                     // Progress time
