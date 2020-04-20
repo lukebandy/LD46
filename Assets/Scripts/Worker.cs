@@ -11,11 +11,14 @@ public class Worker : MonoBehaviour {
     private enum Action { Idle, Walking, Planting }
     private Action action;
     private Tile target;
+    [SerializeField]
     private AudioSource audioSource;
     [SerializeField]
     private AudioClip[] audioDone;
     [SerializeField]
     private AudioClip[] audioAnnoyed;
+    [SerializeField]
+    private AudioSource audioWalking;
     private float audioAnnoyedTimout;
     private MeshRenderer meshRenderer;
     [SerializeField]
@@ -28,8 +31,6 @@ public class Worker : MonoBehaviour {
         timeIdleRemaning = Random.Range(5.0f, 10.0f);
         if (meshRenderer == null)
             meshRenderer = GetComponentInChildren<MeshRenderer>();
-        if (audioSource == null)
-            audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -128,14 +129,22 @@ public class Worker : MonoBehaviour {
         // Look towards camera
         if (GameController.main.gameState == GameController.GameStates.Gameplay || GameController.main.gameState == GameController.GameStates.Paused) {
             transform.GetChild(0).LookAt(Player.main.transform.position);
-            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
+            transform.GetChild(0).rotation = Quaternion.Euler(0, transform.GetChild(0).rotation.eulerAngles.y + 180, 0);
         }
         else {
             transform.GetChild(0).LookAt(GameController.main.camera.transform.position);
-            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
+            transform.GetChild(0).rotation = Quaternion.Euler(0, transform.GetChild(0).rotation.eulerAngles.y + 180, 0);
         }
 
-        // TODO: Update material to show angle and action
+        // Walking noises
+        if (GameController.main.gameState != GameController.GameStates.Paused && action != Action.Planting) {
+            if (!audioWalking.isPlaying)
+                audioWalking.Play();
+        }
+        else
+            audioWalking.Stop();
+
+        // Material
         if (action == Action.Planting)
             meshRenderer.material = materialWorking;
         else

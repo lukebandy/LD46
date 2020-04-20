@@ -13,7 +13,6 @@ public class UIController : MonoBehaviour {
 
     [SerializeField]
     private GameObject tutorial;
-    private float tutorialRemaining;
 
     [SerializeField]
     private GameObject hud;

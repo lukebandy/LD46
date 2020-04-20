@@ -14,6 +14,10 @@ public class Plant : MonoBehaviour {
     private float timeDryProgress;
     private float timeDeadProgress;
     private bool died;
+    [SerializeField]
+    private AudioSource audioGrown;
+    [SerializeField]
+    private AudioSource audioDied;
 
     public void Setup(Tile tile, PlantData plantData) {
         transform.position = tile.transform.position;
@@ -36,11 +40,11 @@ public class Plant : MonoBehaviour {
         // Look towards camera
         if (GameController.main.gameState == GameController.GameStates.Gameplay || GameController.main.gameState == GameController.GameStates.Paused) {
             transform.GetChild(0).LookAt(Player.main.transform.position);
-            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
+            transform.GetChild(0).rotation = Quaternion.Euler(0, transform.GetChild(0).rotation.eulerAngles.y + 180, 0);
         }
         else {
             transform.GetChild(0).LookAt(GameController.main.camera.transform.position);
-            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 180, 0);
+            transform.GetChild(0).rotation = Quaternion.Euler(0, transform.GetChild(0).rotation.eulerAngles.y + 180, 0);
         }
 
         // Gameplay loop
@@ -52,10 +56,16 @@ public class Plant : MonoBehaviour {
                 else
                     timeDryProgress += Time.deltaTime;
 
-                if (timeDryProgress < plantData.dryTime)
+                if (timeDryProgress < plantData.dryTime) {
+                    bool grown = timeGrowProgress >= plantData.growTime;
                     timeGrowProgress += Time.deltaTime;
+                    if (grown != timeGrowProgress >= plantData.growTime) {
+                        audioGrown.Play();
+                    }
+                }
                 else {
                     if (!died) {
+                        audioDied.Play();
                         deaths++;
                         died = true;
                     }
@@ -70,7 +80,11 @@ public class Plant : MonoBehaviour {
             }
         }
         else {
+            bool grown = timeGrowProgress >= plantData.growTime;
             timeGrowProgress += Time.deltaTime;
+            if (grown != timeGrowProgress >= plantData.growTime) {
+                audioGrown.Play();
+            }
         }
 
         // Update material to reflect current state
