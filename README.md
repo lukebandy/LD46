@@ -2,7 +2,7 @@
 
 You've landed yourself a new job working on a local farm where you'll be watering plants; how hard can it be?
 
-![Gameplay](https://github.com/lukebandy/LD46/tree/master/Assets/Other/Screenshot2.png "Gameplay")
+![Gameplay](https://raw.githubusercontent.com/lukebandy/LD46/master/Assets/Other/Screenshot%202.png "Gameplay")
 
 Made as part of [Ludum Dare Jam 46](https://ldjam.com/events/ludum-dare/46/$181424)
 
