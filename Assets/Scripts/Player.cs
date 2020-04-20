@@ -10,15 +10,13 @@ public class Player : MonoBehaviour {
     private float moveSpeed;
     [SerializeField]
     private float lookSensitivity;
-    [SerializeField]
-    private float lookSmoothing;
     private Vector2 lookIncrement;
-    private Vector2 lookSmooth;
     [SerializeField]
     private float hoseDistance;
     private new ParticleSystem particleSystem;
     [SerializeField]
     private AudioSource audioWater;
+    private float audioWaterTimer;
     [SerializeField]
     private AudioSource audioEmpty;
     [SerializeField]
@@ -83,10 +81,19 @@ public class Player : MonoBehaviour {
                 emission.enabled = false;
             }
 
-            if (Input.GetMouseButtonDown(0) && hoseRemaining > 0)
+            // Hose audio
+
+            if (Input.GetMouseButtonUp(0))
+                audioWaterTimer = 0.2f;
+            else if (audioWaterTimer > 0)
+                audioWaterTimer -= Time.deltaTime;
+
+            if (Input.GetMouseButton(0) && hoseRemaining > 0 && !audioWater.isPlaying) {
                 audioWater.Play();
-            else if (Input.GetMouseButtonUp(0) || hoseRemaining <= 0)
+            }
+            else if (((!Input.GetMouseButton(0) && audioWaterTimer <= 0) || hoseRemaining <= 0) && audioWater.isPlaying) {
                 audioWater.Stop();
+            }
 
             // Water topup
             foreach (Tap tap in Tap.taps) {
@@ -114,6 +121,14 @@ public class Player : MonoBehaviour {
             }
 
             audioWater.Stop();
+        }
+
+        if ((Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) && GameController.main.gameState == GameController.GameStates.Gameplay) {
+            if (!audioWalking.isPlaying)
+                audioWalking.Play();
+        }
+        else{
+            audioWalking.Stop();
         }
     }
 
