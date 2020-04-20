@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 61addb63b718d4199a6aa37e74a4db55
+guid: 8518a4d8502c03048896e91aa4ffdd5e
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Pixeled
+  fontName: Minecraft
   fontNames:
-  - Pixeled
+  - Minecraft
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

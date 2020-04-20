@@ -79,7 +79,7 @@ public class Plant : MonoBehaviour {
                 }
             }
         }
-        else {
+        else if (GameController.main.gameState != GameController.GameStates.Paused) {
             bool grown = timeGrowProgress >= plantData.growTime;
             timeGrowProgress += Time.deltaTime;
             if (grown != timeGrowProgress >= plantData.growTime) {

@@ -40,8 +40,9 @@ public class GameController : MonoBehaviour {
     private float cameraElapsed;
     [SerializeField]
     private ParticleSystem rain;
-    private float rainTimer;
     private float rainTimerWet;
+    [SerializeField]
+    private AudioSource audioRain;
 
     private Transform folderTiles;
     private Transform folderFences;
@@ -83,11 +84,13 @@ public class GameController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        // Cursor
         if (gameState == GameStates.Gameplay || gameState == GameStates.Intro || gameState == GameStates.Outro)
             Cursor.lockState = CursorLockMode.Locked;
         else
             Cursor.lockState = CursorLockMode.None;
 
+        // Core stuff
         switch (gameState) {
             case GameStates.MainMenu:
                 seasonProgress += Time.deltaTime;
@@ -122,7 +125,6 @@ public class GameController : MonoBehaviour {
                     year = 1;
                     seasonProgress = 0.0f;
                     Plant.deaths = 0;
-                    rainTimer = Random.Range(20.0f, 40.0f);
                     cameraElapsed = 0.0f;
                     // Setup workers
                     for (int i = 1; i < folderWorkers.childCount; i++)
@@ -153,27 +155,6 @@ public class GameController : MonoBehaviour {
                         camera.gameObject.SetActive(true);
                         gameState = GameStates.Outro;
                         highScore = Mathf.Max(highScore, year - 1);
-                    }
-
-                    // Rain
-                    rainTimer -= Time.deltaTime;
-                    if (rainTimer <= 0) {
-                        var emission = rain.emission;
-                        if (emission.enabled) {
-                            emission.enabled = false;
-                            rainTimer = Random.Range(20.0f, 40.0f);
-                        }
-                        else {
-                            emission.enabled = true;
-                            rainTimer = Random.Range(5.0f, 10.0f);
-                        }
-                    }
-                    if (rain.emission.enabled) {
-                        rainTimerWet -= Time.deltaTime;
-                        if (rainTimerWet <= 0) {
-                            rainTimerWet = Random.Range(0.05f, 0.25f);
-                            Tile.tiles[Random.Range(0, Tile.tiles.GetLength(0)), Random.Range(0, Tile.tiles.GetLength(1))].Water();
-                        }
                     }
 
                     // Progress time
@@ -209,6 +190,25 @@ public class GameController : MonoBehaviour {
                                 break;
                         }
                         seasonProgress -= seasonLength;
+                    }
+
+                    // Rain
+                    if (season == Seasons.Autumn && !rain.emission.enabled) {
+                        var emission = rain.emission;
+                        emission.enabled = true;
+                        audioRain.Play();
+                    }
+                    else if (season != Seasons.Autumn && rain.emission.enabled) {
+                        var emission = rain.emission;
+                        emission.enabled = false;
+                        audioRain.Stop();
+                    }
+                    if (rain.emission.enabled) {
+                        rainTimerWet -= Time.deltaTime;
+                        if (rainTimerWet <= 0) {
+                            rainTimerWet = Random.Range(0.2f, 0.4f);
+                            Tile.tiles[Random.Range(0, Tile.tiles.GetLength(0)), Random.Range(0, Tile.tiles.GetLength(1))].Water();
+                        }
                     }
                 }
                 break;

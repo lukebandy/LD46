@@ -103,7 +103,7 @@ public class Player : MonoBehaviour {
             }
             if (Physics.Raycast(transform.GetChild(0).position, transform.GetChild(0).forward, out RaycastHit hitTap, 4.0f)) {
                 if (hitTap.transform.CompareTag("Tap")) {
-                    hoseRemaining = Mathf.Clamp(hoseRemaining + (Time.deltaTime * 5.0f), 0, hoseCapacity);
+                    hoseRemaining = Mathf.Clamp(hoseRemaining + (Time.deltaTime * 2.0f), 0, hoseCapacity);
                     var emission = hitTap.transform.GetComponent<Tap>().particleSystem.emission;
                     emission.enabled = true;
                     hitTap.transform.GetComponent<Tap>().inuse = true;
