@@ -1,4 +1,4 @@
-# No Spray, No Lay
+# No Spray, No Pay
 
 You've landed yourself a new job working on a local farm where you'll be watering plants; how hard can it be?
 
