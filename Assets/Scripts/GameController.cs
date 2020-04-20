@@ -29,6 +29,7 @@ public class GameController : MonoBehaviour {
     [HideInInspector]
     public GameStates gameState;
     public new Camera camera;
+    public int highScore;
 
     // Private variables
     private float seasonProgress;
@@ -151,6 +152,7 @@ public class GameController : MonoBehaviour {
                     if (Plant.deaths >=  10) {
                         camera.gameObject.SetActive(true);
                         gameState = GameStates.Outro;
+                        highScore = Mathf.Max(highScore, year - 1);
                     }
 
                     // Rain
@@ -222,19 +224,21 @@ public class GameController : MonoBehaviour {
                 camera.transform.position = Vector3.Slerp(Player.main.transform.GetChild(0).position, cameraPosition, cameraElapsed / 7.0f);
                 camera.transform.rotation = Quaternion.Slerp(Player.main.transform.GetChild(0).rotation, cameraRotation, cameraElapsed / 7.0f);
 
+                if (cameraElapsed > 10.0f) {
+                    camera.transform.position = cameraPosition;
+                    camera.transform.rotation = cameraRotation;
+                    Debug.LogWarning("Camera got stuck");
+                }
+
                 if (camera.transform.position == cameraPosition && camera.transform.rotation == cameraRotation) {
-                    Debug.Log("Finished");
                     cameraElapsed = 0.0f;
                     gameState = GameStates.MainMenu;
-                }
-                else {
-                    Debug.Log("Not finished");
                 }
                 break;
         }
     }
 
-    public void GenerateMap(int sizeX = 20, int sizeY = 20, int taps = 3, int border = 5) {
+    public void GenerateMap(int sizeX = 20, int sizeY = 20, int taps = 3, int border = 10) {
         // Tiles
         int child = 0;
         Tile.tiles = new Tile[sizeX, sizeY];
@@ -332,8 +336,22 @@ public class GameController : MonoBehaviour {
         // Trees
         child = 0;
 
-        for (int y = -3; y >= -border; y -= 2) {
-            int x = 2 + Random.Range(0, 3);
+        for (int i = 0; i < 100; i++) {
+            Vector3 positon = new Vector3(Random.Range(1 - border, sizeX + border - 1), 4.5f, Random.Range(1 - border, sizeY + border - 1));
+            if (!Physics.CheckSphere(positon, 0.6f) && !Physics.CheckSphere(new Vector3(positon.x, 0, positon.z), 0.6f)) {
+                if (child + 1 > folderTrees.childCount)
+                    Instantiate(prefabTree, folderTrees);
+                folderTrees.GetChild(child).position = positon;
+                folderTrees.GetChild(child).rotation = Quaternion.Euler(0, 180, 0);
+                folderTrees.GetChild(child).gameObject.SetActive(true);
+                child++;
+            }
+        }
+
+        /*
+
+        for (int y = -4; y >= -border + 1; y -= 2) {
+            int x = 2 + Random.Range(0, 6);
             while (x < sizeX - 3) {
                 if (child + 1 > folderTrees.childCount)
                     Instantiate(prefabTree, folderTrees);
@@ -345,8 +363,8 @@ public class GameController : MonoBehaviour {
             }
         }
 
-        for (int y = sizeY + 2; y < sizeY + border; y += 2) {
-            int x = 2 + Random.Range(0, 3);
+        for (int y = sizeY + 2; y < sizeY + border - 1; y += 2) {
+            int x = 2 + Random.Range(0, 6);
             while (x < sizeX - 3) {
                 if (child + 1 > folderTrees.childCount)
                     Instantiate(prefabTree, folderTrees);
@@ -358,8 +376,8 @@ public class GameController : MonoBehaviour {
             }
         }
 
-        for (int x = -2; x >= -border; x -= 2) {
-            int y = 2 + Random.Range(0, 3);
+        for (int x = -3; x >= -border + 1; x -= 2) {
+            int y = 2 + Random.Range(0, 6);
             while (y < sizeY - 3) {
                 if (child + 1 > folderTrees.childCount)
                     Instantiate(prefabTree, folderTrees);
@@ -372,7 +390,7 @@ public class GameController : MonoBehaviour {
         }
 
         for (int x = sizeX + 2; x <= sizeX + border; x += 2) {
-            int y = 2 + Random.Range(0, 3);
+            int y = 2 + Random.Range(0, 6);
             while (y < sizeY - 3) {
                 if (child + 1 > folderTrees.childCount)
                     Instantiate(prefabTree, folderTrees);
@@ -383,6 +401,7 @@ public class GameController : MonoBehaviour {
                 y += Random.Range(7, 11);
             }
         }
+        */
 
         while (child + 1 < folderTrees.childCount) {
             folderTrees.GetChild(child).gameObject.SetActive(false);

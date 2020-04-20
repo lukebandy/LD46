@@ -64,6 +64,12 @@ public class UIController : MonoBehaviour {
     void Update() {
         if (GameController.main.gameState == GameController.GameStates.MainMenu && !settingsOpen) {
             main.SetActive(true);
+            if (GameController.main.highScore > 0) {
+                mainHighscore.transform.parent.gameObject.SetActive(true);
+                mainHighscore.text = "High score: " + GameController.main.highScore.ToString() + " years";
+            }
+            else
+                mainHighscore.transform.parent.gameObject.SetActive(false);
         }
         else
             main.SetActive(false);
